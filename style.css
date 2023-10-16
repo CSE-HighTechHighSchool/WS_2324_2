@@ -14,13 +14,13 @@ section{
 
 .home{
     display:flex;
-    min-height: 85vh;
+   /* min-height: 85vh;*/
     align-items:center;
     background: url(./img/bgimage.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    height: 665px;
+    height: 85vh;
 }
 
 .home .content{

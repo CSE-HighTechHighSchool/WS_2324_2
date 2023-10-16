@@ -18,8 +18,8 @@ section{
     background: url(./img/bgimage.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    object-fit: cover;
-    height: 665px;
+    /*object-fit: cover;
+    height: 665px;*/
 }
 
 .home .content{

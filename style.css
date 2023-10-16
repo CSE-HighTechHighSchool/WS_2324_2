@@ -32,6 +32,7 @@ section{
     font-weight: 600;
     letter-spacing: 13px;
     position: relative;
+    padding-top: 1;
 }
 
 .home .content h6{ 
@@ -47,7 +48,8 @@ section{
 }
 
 .nbMenuItem{            /*navbar link text properties*/
-    font-size: 18px;
+    font-size:1.7rem;
+    font-weight: 100;
     margin-left: 10px;
     margin-right: 10px;
     color: #FFFFFF;

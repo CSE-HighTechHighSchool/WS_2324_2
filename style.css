@@ -19,8 +19,7 @@ section{
     background: url(./img/bgimage.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    object-fit: cover;
-    height: 85vh;
+    height: 90vh;
 }
 
 .home .content{

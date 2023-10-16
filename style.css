@@ -45,7 +45,7 @@ section{
 
 .nb-background-color{   /*navbar background color*/
     background-color: black;
-    opacity: 90%
+    opacity: 100%
 }
 
 .nbMenuItem{            /*navbar link text properties*/
@@ -119,7 +119,7 @@ p, li{
     display: block;
     list-style-type: none;
     background: black;
-    height: 72px; 
+    height: 75px; 
 
   li {
     display: inline-block;
@@ -129,7 +129,7 @@ p, li{
     display: inline-block;
     color: white;
     background: lightgray;
-    line-height: 72px; 
+    line-height: 75px; 
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;

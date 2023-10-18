@@ -1,11 +1,38 @@
 
 /* ------------------ Class ---------------- */
 *{
-    margin:0; padding:0;
+    margin:0; 
+    padding:0;
     box-sizing:border-box;
     font-family: 'DM Sans', sans-serif;
     outline: none; border:none;
     transition: .2s linear
+}
+
+.conatainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    display: flex;
+}
+
+.image-item {
+    width: 150px;
+    height: 400px;
+    background-image: url(./img/sun.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.4s;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    margin: 1rem;
 }
 
 section{
@@ -19,7 +46,7 @@ section{
     background: url(./img/bgimage.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 88vh;
 }
 
 .home .content{
@@ -40,7 +67,7 @@ section{
     font-size:2.5rem;
     color:rgb(255, 255, 255);
     padding:1rem 0;
-    font-weight: 140
+    font-weight: 350
 }
 
 .nb-background-color{   /*navbar background color*/
@@ -49,11 +76,20 @@ section{
 }
 
 .nbMenuItem{            /*navbar link text properties*/
-    font-size:1.7rem;
+    font-size:1.5rem;
     font-weight: thinner;
     margin-left: 10px;
     margin-right: 10px;
     color: #FFFFFF;
+    
+.nav ul {
+   list-style: none;
+   text-align: center;
+}
+
+.nav ul li {
+   display: inline-block;
+}
 }
 
 .ovPadRight{

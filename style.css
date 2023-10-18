@@ -31,7 +31,7 @@ section{
     line-height: 0.9;
     color: #000000;
     font-weight: 600;
-    letter-spacing: 13px;
+    letter-spacing: 14px;
     position: relative;
     padding-top: 1;
 }
@@ -40,7 +40,7 @@ section{
     font-size:2.5rem;
     color:rgb(255, 255, 255);
     padding:1rem 0;
-    font-weight: 150
+    font-weight: 140
 }
 
 .nb-background-color{   /*navbar background color*/
@@ -50,7 +50,7 @@ section{
 
 .nbMenuItem{            /*navbar link text properties*/
     font-size:1.7rem;
-    font-weight: 100;
+    font-weight: thinner;
     margin-left: 10px;
     margin-right: 10px;
     color: #FFFFFF;

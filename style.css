@@ -162,11 +162,19 @@ p, li{
 
 /* --------------------- TRANSPORTATION ---------------------*/
 /* Dropdown Button */
+.header-transport{
+    text-align: center;
+}
+
+.card-title-transport{
+    text-align: center;
+}
+
 .dropbtn {
-    background-color: #000000;
-    color: white;
+    background-color: #ffffff;
+    color: black;
     padding: 16px;
-    font-size: 16px;
+    font-size: 30px;
     border: none;
     min-width: 500px;
     text-align: center;

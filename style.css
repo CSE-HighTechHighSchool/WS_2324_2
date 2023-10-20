@@ -44,7 +44,7 @@
 
 .image-item:hover h2 {
     position: absolute;
-    bottom: 5px;
+    bottom: 2px;
     left: 50%;
     opacity: 1;
     z-index: 2;
@@ -149,26 +149,33 @@ p, li{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-.clean-energy {
+.row {
+    margin-top: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+/*.clean-energy {
     margin-top: 1rem;
     padding: 2rem 2rem;
     text-align: center;
   }
 
-  .child {
-     display: inline-block;
-     border: 1px solid #000000;
-      border-radius: 1em;
-     padding: 1rem 1rem;
-     vertical-align: middle;
-  }
+  .child { 
+    display:flex; 
+    display: inline-block; 
+    border: 1px solid #000000;
+    border-radius: 1em;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  } 
   
   .child2 {
       display: inline-block;
       border: 2px solid #000000;
       border-radius: 1em;
       vertical-align: middle;
-  }
+  }*/
  
   .child2 img {
       display:flex;

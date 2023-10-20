@@ -9,12 +9,8 @@
     transition: .2s linear
 }
 
-.conatainer {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.pic {
+    display: inline-block;
 }
 
 .images {

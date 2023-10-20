@@ -193,6 +193,10 @@ p, li{
     padding: 0px;
 }
 
+.learn{
+    margin-top: 450px;
+}
+
 button {
     justify-content: center;
     align-items: center;
@@ -205,7 +209,6 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block flex;
-    margin-top: 450px;
 }
 
 /* --------------------- ID ---------------------*/

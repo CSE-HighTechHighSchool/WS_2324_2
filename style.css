@@ -146,7 +146,7 @@ p, li{
 }
 
 .nav-item{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .row {
@@ -230,17 +230,27 @@ p, li{
     }
 }
 
+.gh {
+    font: Cambria;
+    color: #fff;
+    padding: 0px;
+}
+
 /* --------------------- ID ---------------------*/
 
 /* --------------------- TRANSPORTATION ---------------------*/
 /* Dropdown Button */
+.header-transport{
+    text-align: center;
+}
+
 .dropbtn {
     background-color: #000000;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-    min-width: 500px;
+    max-width: 500px;
     text-align: center;
   }
   

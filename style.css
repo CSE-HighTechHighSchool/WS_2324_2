@@ -19,10 +19,12 @@
 
 .images {
     display: flex;
+    text-align: center;
+
 }
 
 .image-item {
-    width: 150px;
+    width: 350px;
     height: 400px;
     background-image: url(./img/sun.jpg);
     background-repeat: no-repeat;
@@ -32,17 +34,17 @@
     border-radius: 20px;
     position: relative;
     cursor: pointer;
-    margin: 1rem;
+    margin: 1.3rem;
 }
 
 .image-item:hover {
-    width: 300px;
+    width: 800px;
     height: 400px;
 }
 
 .image-item:hover h2 {
     position: absolute;
-    bottom: 2px;
+    bottom: 5px;
     left: 50%;
     opacity: 1;
     z-index: 2;
@@ -104,7 +106,7 @@ section{
 
 .nbMenuItem{            /*navbar link text properties*/
     font-size:1.5rem;
-    font-weight: thinner;
+    font-weight: 100;
     margin-left: 10px;
     margin-right: 10px;
     color: #FFFFFF;
@@ -112,6 +114,18 @@ section{
 .nav ul {
    list-style: none;
    text-align: center;
+}
+
+button {
+    border-radius:1em;
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .nav ul li {
@@ -135,13 +149,36 @@ p, li{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-.navbar ul {
-    list-style: none;
+.clean-energy {
+    margin-top: 1rem;
+    padding: 2rem 2rem;
     text-align: center;
- }
+  }
+
+  .child {
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 1em;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+  
+  .child2 {
+    display: inline-block;
+    border: 2px solid #000000;
+    border-radius: 1em;
+    vertical-align: middle;
+  }
  
+  .child2 img {
+    border-radius: 1em;
+    width: 800px;
+    height: 500px;
+  }
+
  .navbar ul li {
     display: inline-block;
+    vertical-align: middle;
     margin: 0;
     padding: 0
  }

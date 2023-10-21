@@ -12,4 +12,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
 <path d="M357 35  C351 27 339 17 328 15  C525 15 525 15 525 15  C536 15 546 19 551 28  C602 118 602 118 602 118  C653 89 653 89 653 89  C570 233 570 233 570 233  C404 233 404 233 404 233  C454 203 454 203 454 203z" />
 </g>
 
+            <circle class="cls-2 marker-reduce" cx="557" cy="210" r="17.5"/>
+            <circle class="cls-2 marker-reuse" cx="435" cy="582" r="17.5"/>
+            <circle class="cls-2 marker-recycle" cx="171" cy="290.28" r="17.5"/>
 </svg>

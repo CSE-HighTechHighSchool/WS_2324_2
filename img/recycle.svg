@@ -14,5 +14,5 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
 
             <circle class="cls-2 marker-reduce" cx="557" cy="210" r="17.5"/>
             <circle class="cls-2 marker-reuse" cx="435" cy="582" r="17.5"/>
-            <circle class="cls-2 marker-recycle" cx="171" cy="290.28" r="17.5"/>
+            <circle class="cls-2 marker-recycle" cx="173" cy="290.28" r="17.5"/>
 </svg>

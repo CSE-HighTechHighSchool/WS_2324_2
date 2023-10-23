@@ -169,10 +169,10 @@ p, li{
 
  .hacks h1:nth-child(2){
     color: #03a9f4;
-    animation: animate 4s ease-in-out infinite;
+    animation: animate-tr 4s ease-in-out infinite;
 }
 
-@keyframes animate 
+@keyframes animate-tr 
 {
     0%,100%
     {
@@ -240,6 +240,11 @@ button {
     left: 32%;
 }
 
+.electric{
+    background-color: black;
+    height: 100vh;
+}
+
 .block{
     position: relative;
     margin: 10% auto 0;
@@ -289,17 +294,20 @@ button {
 
 .transport-header-h1{
     position: absolute;
-    top: 35%;
-    left: 25%;
-    color: #ddd;
+    top: 45%;
+    left: 3%;
+    color: #FFFFFF;
     font-size: 5em;
     letter-spacing: 0.2em;
-    opacity: 0;
-    display: inline-block;
-    animation: animate 1s linear forwards;
 }
 
-@keyframes animate{
+span .transport-header-h1{
+    opacity: 0;
+    display: inline-block;
+    animation:animate 1s linear forwards;
+}
+
+@keyframes animate {
     0%{
         opacity: 0;
         transform: rotateY(90deg);
@@ -307,7 +315,7 @@ button {
 
     100%{
         opacity: 1;
-        transform: rotateY(90deg);
+        transform: rotateY(0deg);
     }
 }
 

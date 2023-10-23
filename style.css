@@ -147,7 +147,7 @@ p, li{
  .hacks {
     margin: 0;
     padding: 0;
-    box-sizing: border-bos;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,10 +169,10 @@ p, li{
 
  .hacks h1:nth-child(2){
     color: #03a9f4;
-    animation: animate 4s ease-in-out infinite;
+    animation: animate-tr 4s ease-in-out infinite;
 }
 
-@keyframes animate 
+@keyframes animate-tr 
 {
     0%,100%
     {
@@ -238,6 +238,11 @@ button {
 .recycle-txt{
     top: 90%;
     left: 32%;
+}
+
+.electric{
+    background-color: black;
+    height: 100vh;
 }
 
 .block{

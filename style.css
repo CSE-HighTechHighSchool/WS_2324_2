@@ -9,10 +9,6 @@
     transition: .2s linear
 }
 
-.pic {
-    display: inline-block;
-}
-
 .images {
     display: flex;
     text-align: center;
@@ -103,7 +99,7 @@ section{
 .nbMenuItem{            /*navbar link text properties*/
     font-size:1.5rem;
     font-weight: 100;
-    margin-left: 10px;
+    margin-left: 1px;
     margin-right: 10px;
     color: #FFFFFF;
     
@@ -190,7 +186,7 @@ p, li{
 .gh {
     font: DM sans;
     color: #fff;
-    padding: 0px;
+    padding: 1px 20px;
 }
 
 .learn{

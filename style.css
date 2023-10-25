@@ -170,11 +170,11 @@ p, li{
 
  .hacks h1:nth-child(1){
     color: transparent;
-    -webkit-text-stroke: 2px #03a9f4
+    -webkit-text-stroke: 2px #0074a9
  }
 
  .hacks h1:nth-child(2){
-    color: #03a9f4;
+    color: #0074a9;
     animation: animate-tr 4s ease-in-out infinite;
 }
 
@@ -301,6 +301,7 @@ button {
 
 .details{
     text-align: left;
+    font-family: "DM sans";
 }
 
 /* --------------------- ID ---------------------*/

@@ -299,8 +299,8 @@ button {
     font-family: sans-serif;
 }
 
-.compost_details{
-    text-align: start;
+.details{
+    text-align: left;
 }
 
 /* --------------------- ID ---------------------*/

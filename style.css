@@ -5,13 +5,8 @@
     padding:0;
     box-sizing:border-box;
     font-family: 'DM Sans', sans-serif;
-    outline: none; 
-    border:none;
+    outline: none; border:none;
     transition: .2s linear
-}
-
-.container{
-    font: 'DM Sans';
 }
 
 .images {
@@ -142,22 +137,21 @@ p, li{
  }
 
  .hacks {
-    margin: auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 45vh;
+    min-height: 100vh;
     position: relative;
-    background-color: #B4D9CA;
  }
 
  .hacks h1 {
     position: absolute;
     color: #fff;
-    font-size: 14em;
-    font-family: "DM-sans";
+    transform: translate(0%, -70%);
+    font-size: 12em;
  }
 
  .hacks h1:nth-child(1){
@@ -214,29 +208,28 @@ button {
 }
 
 .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
+    display: block flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
     margin-top: 0px;
     position: relative;
-    background-color: #E6E6F5;
+    top: -300px;
 }
 
 .reduce-txt{
-    top: 20%;
+    top: 100%;
     left: 70%;
 }
 
 .reuse-txt{
-    top: 65%;
-    left: 10%;
+    top: 150%;
+    left: 30%;
 }
 
 .recycle-txt{
-    top: 10%;
-    left: 5%;
+    top: 90%;
+    left: 32%;
 }
 
 .electric{
@@ -249,7 +242,7 @@ button {
     margin: 10% auto 0;
     width: 50%;
     height: 400px;
-    background-color: linear-gradient(0deg, black, black, rgb(44,43,43));
+    background: linear-gradient(0 deg, black, black, rgb(44,43,43));
 }
 
 .glow::before , .glow::after{
@@ -263,23 +256,7 @@ button {
     width: calc(100%+5px);
     height: calc(100%+5px);
     z-index: -1;
-    animation: animate-ts 20s linear infinite;
-}
-
-@keyframes animate-ts{
-    0%{
-        background-position: 0 0;
-    }
-    50%{
-        background-position: 400% 0;
-    }
-    100%{
-        background-position: 0 0;
-    }
-}
-
-.glow::after{
-    filter:blur(40px);
+    animation: animate 20s linear infinite;
 }
 
 .carousel-item{
@@ -295,39 +272,60 @@ button {
     text-align: left;
 }
 
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.glow::after{
+    filter:blur(40px);
+}
+
 /* --------------------- ID ---------------------*/
 
 /* --------------------- TRANSPORTATION ---------------------*/
 /* Dropdown Button */
 .transport-header-big{
-    background-color: black;
-    height: 100vh;
+    background-color: rgb(155, 233, 182);
+    height: 75vh;
 }
 
 .transport-header-h1{
     position: absolute;
-    top: 45%;
-    left: 3%;
+    top: 40%;
+    left: 9%;
     color: #FFFFFF;
-    font-size: 5em;
-    letter-spacing: 0.2em;
+    font-size: 80px;
+    letter-spacing: 0.1em;
+    font-family: 'DM Sans', sans-serif;
 }
 
-span .transport-header-h1{
+.transport-header-h1 span{
+    text-align: center;
     opacity: 0;
     display: inline-block;
-    animation:animate 1s linear forwards;
+    font-family: 'DM Sans', sans-serif;
+    animation:animate-ts 1s linear forwards;
 }
 
-@keyframes animate {
+@keyframes animate-ts {
     0%{
         opacity: 0;
         transform: rotateY(90deg);
+        filter: blur(10px);
     }
 
     100%{
         opacity: 1;
         transform: rotateY(0deg);
+        filter: blur(0);
     }
 }
 

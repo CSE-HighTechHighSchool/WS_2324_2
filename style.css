@@ -267,7 +267,8 @@ button {
     margin: 10% auto 0;
     width: 50%;
     height: 400px;
-    background-color: linear-gradient(0deg, black, black, rgb(44,43,43));
+    background: linear-gradient(0deg, black, black, rgb(44,43,43));
+    color: white;
 }    
     
 .glow::before , .glow::after{

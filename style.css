@@ -134,14 +134,6 @@ p, li{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.row {
-    margin-top: 1rem;
-    padding: 2rem 2rem;
-    text-align: center;
-}
-
-
-
  .navbar ul li {
     display: inline-block;
     vertical-align: middle;
@@ -345,6 +337,7 @@ span .transport-header-h1{
 
 .card{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin:1em;
 }
 
 .dropbtn {

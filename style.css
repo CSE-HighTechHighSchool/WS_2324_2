@@ -299,6 +299,10 @@ button {
     font-family: sans-serif;
 }
 
+.compost_details{
+    text-align: start;
+}
+
 /* --------------------- ID ---------------------*/
 
 /* --------------------- TRANSPORTATION ---------------------*/

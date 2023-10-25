@@ -165,7 +165,7 @@ li {
     align-items: center;
     min-height: 45vh;
     position: relative;
-    background-color: #B4D9CA;
+    background-color: #E6E6F5;
 }
 
 
@@ -266,6 +266,7 @@ button {
 .electric {
     background-color: black;
     height: 100vh;
+    z-index: -1;
 }
 
 .block {
@@ -275,10 +276,10 @@ button {
     height: 400px;
     background: linear-gradient(0deg, black, black, rgb(44, 43, 43));
     color: white;
+    z-index: 1;
 }
 
 .glow::before , .glow::after {
-    content: 'Electric Home Appliances';
     position: absolute;
     left: -2px;
     top: -2px;
@@ -287,7 +288,7 @@ button {
     background-size: 400%;
     width: calc(100%+5px);
     height: calc(100%+5px);
-    z-index: -1;
+    z-index: 0;
     animation: animate-ts 20s linear infinite;
 }
 
@@ -312,6 +313,7 @@ button {
 
 .carousel-item {
     max-height: 700px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 

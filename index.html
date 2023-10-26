@@ -1,70 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clean Energy Website</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-crossorigin="anonymous">defer</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Energy Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">defer</script>
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
-<!-- lg = large breakpoint, navbar-light = make text dark, headerBG = custom bss BG color -->
-<div class="gh">
-<a href="index.html" class="navbar-brand pic">
-<img src="img/gh2.png" class="d-inline-block align-text-top w-25">
-</a>
-</div>
-<div class="gh">
-<h1>GH</h1>
-</div>
-<div class="container">
-<!-- Hamburger Menu -->
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-<span class="navbar-toggler-icon"></span>
-</button>
-<!-- Collapsible navbar menu with custom hover underline CSS animation -->
-<div class="collapse navbar-collapse" id="navmenu">
-<!-- Links to hamburger menu icon -->
-<ul class="navbar-nav ms-auto"> <!-- ms-auto is margin spacing -->
-<li class="nav-item">
-<a href="electric.html" class="nav-link hover-underline-animation nbMenuItem">Home Appliances</a>
-</li>
-<li class="nav-item">
-<a href="transportation.html" class="nav-link hover-underline-animation nbMenuItem">Transportation</a>
-</li>
-<li class="nav-item">
-<a href="hacks.html" class="nav-link hover-underline-animation nbMenuItem">Hacks</a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-<section class="home" id="home">
-<div class="content">
-<h1>Green <br>Home</h3>
-<h6>Saving the planet one<br> home at a time</span>
-</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
+        <!-- lg = large breakpoint, navbar-light = make text dark, headerBG = custom bss BG color -->
+        <div class="gh">
+            <a href="index.html" class="navbar-brand pic">
+                <img src="img/gh4.png" class="d-inline-block align-text-top w-50">
+            </a>
+        </div>
+        <div class="container">
+            <!-- Hamburger Menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible navbar menu with custom hover underline CSS animation -->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!-- Links to hamburger menu icon -->
+                <ul class="navbar-nav ms-auto"> <!-- ms-auto is margin spacing -->
+                    <li class="nav-item">
+                        <a href="electric.html" class="nav-link hover-underline-animation nbMenuItem">Home
+                            Appliances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="transportation.html"
+                            class="nav-link hover-underline-animation nbMenuItem">Transportation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hacks.html" class="nav-link hover-underline-animation nbMenuItem">Hacks</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <section class="home" id="home">
+            <div class="content">
+                <h1>Green <br>Home</h3>
+                    <h6>Saving the planet one<br> home at a time</h6>
+            </div>
+    
+    
+            <div style="height:900px;"></div>
+            <p id="anchor"></p>
+            <div style="height:900px;"></div>
+            <form method="get" action="#anchor">
+                <button class="learn" type="submit">Learn More</button>
+            </form>
+        </section>
+    </div>
 
+    <p>Clean Energy</p>
 
-<form method="get" action="#anchor">
-<button class="learn" type="submit">Learn More</button>
-</form>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body"><img class="img-fluid" src="img/cleanenergy.png" alt="Wind Farm Clean Energy">
+                </div>
+            </div>
+        </div>
+    </div>
 
+<<<<<<< HEAD
 
 <div style="height:900px;"></div>
 <p id="anchor"></p>
@@ -105,16 +130,35 @@ crossorigin="anonymous">defer</script>
 </div>
 </div>
 </div>
+=======
+    <div class="container">
+        <div class="images">
+            <div class="image-item">
+                <h2> Renewable</h2>
+            </div>
+            <div class="image-item">
+                <h2>Money</h2>
+            </div>
+            <div class="image-item">
+                <h2>Environment </h2>
+            </div>
+            <div class="image-item">
+                <h2> Reliability</h2>
+            </div>
+        </div>
+    </div>
+>>>>>>> 914b2c6bf690e058302898eca516bf2d321d8972
 
 
 </body>
 <!-- Footer (requires Bootstrap icons CSS)-->
 <footer class="p-5 footer text-dark text-center position-relative">
-<div class="container">
-<p class="lead">Copyright &copy; TSA Webmaster Green Energy Website</p>
-<a href="#" class="position-absolute bottom-0 end-0 p-5">
-<i class="bi bi-arrow-up-circle h2 icon-white"></i>
-</a>
-</div>
+    <div class="container">
+        <p class="lead">Copyright &copy; TSA Webmaster Green Energy Website</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+        </a>
+    </div>
 </footer>
+
 </html>

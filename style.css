@@ -1,24 +1,24 @@
 /* ------------------ Nav ---------------- */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
     outline: none;
-    border:none;
+    border: none;
     transition: .2s linear
 }
-    
-    
-.container{
+
+
+.container {
     font: 'DM Sans';
-} 
-    
+}
+
 .images {
     display: flex;
     text-align: center;
 }
-    
+
 .image-item {
     width: 350px;
     height: 400px;
@@ -32,14 +32,14 @@
     cursor: pointer;
     margin: 1.3rem;
 }
-    
-    
+
+
 .image-item:hover {
     width: 800px;
     height: 400px;
 }
-    
-    
+
+
 .image-item:hover h2 {
     position: absolute;
     bottom: 2px;
@@ -49,8 +49,8 @@
     transition: all 0.4s;
     transform: translate(-50%, -50%)
 }
-    
-    
+
+
 .image-item:hover::after {
     content: '';
     position: absolute;
@@ -62,27 +62,27 @@
     transition: ease-in-out 0.4s;
     background-image: linear-gradient(0deg, #e65b00, rgb(255 255 255 / 0%))
 }
-    
-    
-section{
-    padding:2rem 9%;
+
+
+section {
+    padding: 2rem 9%;
 }
-    
-.home{
-    display:flex;
+
+.home {
+    display: flex;
     min-height: 665px;
-    align-items:center;
+    align-items: center;
     background: url(./img/bgimage.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 88vh;
 }
-    
-.home .content{
+
+.home .content {
     max-width: 50rem;
-}    
-    
-.home .content h1{
+}
+
+.home .content h1 {
     font-size: 9.5rem;
     line-height: 0.9;
     color: #000000;
@@ -91,67 +91,71 @@ section{
     position: relative;
     padding-top: 1;
 }
-    
-    
-.home .content h6{
-    font-size:2.5rem;
-    color:rgb(255, 255, 255);
-    padding:1rem 0;
+
+
+.home .content h6 {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
     font-weight: 350
 }
-    
-.nb-background-color{ /*navbar background color*/
+
+.nb-background-color {
+    /*navbar background color*/
     background-color: black;
     opacity: 100%
 }
-    
-    
-.nbMenuItem{ /*navbar link text properties*/
-    font-size:1.5rem;
+
+
+.nbMenuItem {
+    /*navbar link text properties*/
+    font-size: 1.5rem;
     font-weight: 100;
     margin-left: 1px;
     margin-right: 10px;
     color: #FFFFFF;
+
     .nav ul {
-    list-style: none;
-    text-align: center;
+        list-style: none;
+        text-align: center;
     }
-   
-    
+
+
     .nav ul li {
-    display: inline-block;
+        display: inline-block;
     }
 }
-    
-    
-.ovPadRight{
+
+
+.ovPadRight {
     padding-right: 20px;
 }
-    
-    
-.ovPadLeft{
+
+
+.ovPadLeft {
     padding-left: 20px;
 }
-    
-    
-p, li{
+
+
+p,
+li {
     font-size: 20px !important;
 }
-    
-    
-.nav-item{
+
+
+.nav-item {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-    
-    
+
+
 .navbar ul li {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
     padding: 0
 }
-    
-    
+
+
 .hacks {
     margin: auto;
     padding: 0;
@@ -161,52 +165,54 @@ p, li{
     align-items: center;
     min-height: 45vh;
     position: relative;
-    background-color: #B4D9CA;
+    background-color: #c1f9ff;
 }
-    
-    
+
+
 .hacks h1 {
     position: absolute;
     color: #fff;
     font-size: 14em;
     font-family: "DM-sans";
 }
-    
-    
-.hacks h1:nth-child(1){
+
+
+.hacks h1:nth-child(1) {
     color: transparent;
     -webkit-text-stroke: 2px #00699a
 }
-    
-    
-.hacks h1:nth-child(2){
+
+
+.hacks h1:nth-child(2) {
     color: #00699a;
     animation: animate-tr 4s ease-in-out infinite;
 }
-    
-    
-@keyframes animate-tr{
-    0%,100%
-    {
-    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 58%, 100% 52%, 100% 100%, 0% 100%);
+
+
+@keyframes animate-tr {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 58%, 100% 52%, 100% 100%, 0% 100%);
     }
-    50%{
-    clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+
+    50% {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
     }
 }
-    
-    
+
+
 .gh {
     font: DM sans;
     color: #fff;
     padding: 1px 20px;
 }
-    
-    
-.learn{
-    margin-top: 450px;
+
+
+.learn {
+    justify-content: center;
 }
-    
+
 button {
     justify-content: center;
     align-items: center;
@@ -219,8 +225,9 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block flex;
+    left: 50%;
 }
-    
+
 .hide {
     background-color: lightgreen;
     border-radius: 5px;
@@ -228,8 +235,8 @@ button {
     position: absolute;
     margin: 0 auto;
 }
-    
-    
+
+
 .icon {
     display: flex;
     justify-content: center;
@@ -240,130 +247,139 @@ button {
     position: relative;
     background-color: #E6E6F5;
 }
-    
-.reduce-txt{
+
+.reduce-txt {
     top: 20%;
     left: 70%;
 }
-    
-.reuse-txt{
+
+.reuse-txt {
     top: 65%;
     left: 10%;
 }
-    
-    
-.recycle-txt{
+
+
+.recycle-txt {
     top: 10%;
     left: 5%;
-}    
-    
-.electric{
+}
+
+.electric {
     background-color: black;
-    height: 100vh;
-}    
-    
-.block{
+    height: 80vh;
+    z-index: -1;
+}
+
+.block {
     position: relative;
-    margin: 10% auto 0;
+    margin: auto;
     width: 50%;
-    height: 400px;
-    background-color: linear-gradient(0deg, black, black, rgb(44,43,43));
-}    
-    
-.glow::before , .glow::after{
-    content: 'Electric Home Appliances';
+    height: 300px;
+    background: linear-gradient(0deg, black, rgb(144, 123, 0), rgb(255, 223, 107));
+    border-radius: 50px;
+    color: white;
+    z-index: 1;
+}
+
+.glow::before , .glow::after {
     position: absolute;
     left: -2px;
     top: -2px;
     background: linear-gradient(45 deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300,
-    #099fff);
+            #099fff);
     background-size: 400%;
     width: calc(100%+5px);
     height: calc(100%+5px);
-    z-index: -1;
+    z-index: 0;
     animation: animate-ts 20s linear infinite;
 }
-    
-@keyframes animate-ts{
-    0%{
-    background-position: 0 0;
+
+@keyframes animate-ts {
+    0% {
+        background-position: 0 0;
     }
-    50%{
-    background-position: 400% 0;
+
+    50% {
+        background-position: 400% 0;
     }
-    100%{
-    background-position: 0 0;
+
+    100% {
+        background-position: 0 0;
     }
-} 
-    
-.glow::after{
-    filter:blur(40px);
 }
-    
-    
-.carousel-item{
+
+.glow::after {
+    filter: blur(40px);
+}
+
+
+.carousel-item {
     max-height: 700px;
 }
-    
-    
-.compost{
+
+
+.compost {
     background-color: #E6E6F5;
     font-family: sans-serif;
 }
-    
-    
-.details{
+
+
+.details {
     text-align: left;
 }
-    
-    
-    /* --------------------- ID ---------------------*/
-    
-    
-    /* --------------------- TRANSPORTATION ---------------------*/
-    /* Dropdown Button */
-.transport-header-big{
-    background-color: black;
-    height: 100vh;
+
+
+/* --------------------- ID ---------------------*/
+
+
+/* --------------------- TRANSPORTATION ---------------------*/
+/* Dropdown Button */
+/* --------------------- TRANSPORTATION ---------------------*/
+.transport-header-big {
+    background-color: rgb(155, 233, 182);
+    height: 75vh;
 }
-    
-    
-.transport-header-h1{
+
+.transport-header-h1 {
     position: absolute;
-    top: 45%;
-    left: 3%;
+    top: 40%;
+    left: 9%;
     color: #FFFFFF;
-    font-size: 5em;
-    letter-spacing: 0.2em;
+    font-size: 80px;
+    letter-spacing: 0.1em;
+    font-family: 'DM Sans', sans-serif;
 }
-    span .transport-header-h1{
+
+.transport-header-h1 span {
+    text-align: center;
     opacity: 0;
     display: inline-block;
-    animation:animate 1s linear forwards;
-    }
-    
-@keyframes animate {
-    0%{
+    font-family: 'DM Sans', sans-serif;
+    animation: animate-ts 1s linear forwards;
+}
+
+@keyframes animate-ts {
+    0% {
         opacity: 0;
         transform: rotateY(90deg);
+        filter: blur(10px);
     }
-    
-    100%{
+
+    100% {
         opacity: 1;
         transform: rotateY(0deg);
+        filter: blur(0);
     }
-}    
-    
-.transport-header{
+}
+
+.transport-header {
     text-align: center;
 }
-    
-    
-.card{
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    margin:1em;
+
+.card {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-     
+
 .dropbtn {
     background-color: white;
     color: black;
@@ -373,34 +389,78 @@ button {
     width: 300px;
     text-align: center;
 }
-    /* The container <div> - needed to position the dropdown content */
+
+/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
     text-align: center;
 }
-    /* Dropdown Content (Hidden by Default) */
+
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 410px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: center;
 }
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {background-color: #ddd;}
-    /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {display: block;}
-    /* Change the background color of the dropdown button when the dropdown content is shown */
-    .dropdown:hover .dropbtn {background-color: #3e8e41;}
-    
-    
-    /* --------------------- HACKS ---------------------*/
-    
-    
-    /* -----------------Navbar Underline Animation CSS -----------------*/
+
+.card {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 30px;
+    border: none;
+    width: 300px;
+    text-align: center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 410px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+/* --------------------- HACKS ---------------------*/
+
+
+/* -----------------Navbar Underline Animation CSS -----------------*/
 .hover-underline-animation {
     display: inline-block;
     position: relative;
@@ -424,7 +484,7 @@ button {
     transform: scaleX(1);
     /*transform-origin: bottom left;*/
 }
-    
+
 .navbar-nav {
     top: 50%;
     text-align: center;
@@ -432,23 +492,23 @@ button {
     list-style-type: none;
     background: black;
     height: 75px;
-    
-    
+
+
     li {
-    display: inline-block;
-    height: 100%;
+        display: inline-block;
+        height: 100%;
     }
+
     li a {
-    display: inline-block;
-    color: white;
-    background: lightgray;
-    line-height: 75px;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-decoration: none;
-    margin: 0;
-    height: 100%;
+        display: inline-block;
+        color: white;
+        background: lightgray;
+        line-height: 75px;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-decoration: none;
+        margin: 0;
+        height: 100%;
     }
 }
-    

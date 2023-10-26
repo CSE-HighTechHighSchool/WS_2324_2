@@ -140,10 +140,12 @@ section {
 
 .nbMenuItem {
     /*navbar link text properties*/
-    font-size: 1.5rem;
+    font-size: 30px;
     font-weight: 100;
-    margin-left: 1px;
-    margin-right: 10px;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-top: 5px;
+    margin-bottom: 0px;
     color: #FFFFFF;
 
     .nav ul {

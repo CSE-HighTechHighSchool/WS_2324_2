@@ -373,9 +373,13 @@ button {
     height: 75vh;
 }
 
+.transport-header-main{
+    margin-left: 50%;
+    justify-content: center;
+}
+
 .transport-header-h1 {
-    position: absolute;
-    top: 40%;
+    top: 50%;
     left: 9%;
     color: #FFFFFF;
     font-size: 80px;
@@ -435,7 +439,7 @@ button {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 410px;
+    min-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: center;
@@ -452,7 +456,7 @@ button {
     padding: 16px;
     font-size: 30px;
     border: none;
-    width: 300px;
+    width: 385px;
     text-align: center;
 }
 
@@ -468,7 +472,7 @@ button {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 410px;
+    min-width: 385px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: center;
@@ -486,7 +490,7 @@ button {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #92df95;
 }
 
 

@@ -62,6 +62,18 @@
     margin: 1.3rem;
 }
 
+.image-item .img2 {
+    background-image: url(./img/money.jpeg);
+}
+
+.image-item .img3 {
+    background-image: url(./img/environment.jpeg);
+}
+
+.image-item .img4 {
+    background-image: url(./img/reliable.webp);
+}
+
 .image-item h3{
     color:#000;
     position: absolute;
@@ -74,21 +86,21 @@
 }
 
 .image-item:nth-child(2){
-    background-image: url(./img/sun.jpg);
+    background-image: url(./img/money.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .image-item:nth-child(3){
-    background-image: url(./img/sun.jpg);
+    background-image: url(./img/environment.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .image-item:nth-child(4){
-    background-image: url(./img/sun.jpg);
+    background-image: url(./img/reliable.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

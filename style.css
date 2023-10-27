@@ -38,6 +38,11 @@
     font: 'DM Sans';
 }
 
+.footer{
+    color: white;
+    background-color: black;
+}
+
 .images {
     display: flex;
     text-align: center;

@@ -143,7 +143,7 @@ section {
     font-size: 25px;
     font-weight: 100;
     margin-left: 40px;
-    margin-right: 50px;
+    margin-right: 40px;
     margin-top: 5px;
     margin-bottom: 0px;
     color: #FFFFFF;
@@ -382,7 +382,11 @@ button {
 /* --------------------- TRANSPORTATION ---------------------*/
 .transport-header-big {
     background-color: rgb(155, 233, 182);
-    height: 75vh;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
 }
 
 .transportating {
@@ -391,24 +395,18 @@ button {
     align-items: center;
 }
 
-.transport-header-main{
-    margin-left: 50%;
-    justify-content: center;
-}
-
 .transport-header-h1 {
-    top: 50%;
-    left: 9%;
     color: #FFFFFF;
-    font-size: 80px;
-    letter-spacing: 0.1em;
-    font-family: 'DM Sans', sans-serif;
+    font-size: 90px;
+    letter-spacing: 0.4em;
+    font-family: 'Abril Fatface', sans-serif;
+    display: flex;
 }
 
 .transport-header-h1 span {
     text-align: center;
     opacity: 0;
-    display: inline-block;
+    display: flex;
     font-family: 'DM Sans', sans-serif;
     animation: animate-ts 1s linear forwards;
 }
@@ -469,7 +467,7 @@ button {
 }
 
 .card-img-top {
-    max-height: 325px;
+    height: 325px;
 }
 
 .dropbtn {

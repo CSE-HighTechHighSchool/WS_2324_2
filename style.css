@@ -109,7 +109,6 @@
     transform: translate(-50%, -50%)
 }
 
-
 .image-item:hover::after {
     content: '';
     position: absolute;
@@ -132,12 +131,12 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .image-item1 {
-    width: 350px;
+    width: 400px;
     height: 230px;
     background-image: url(./img/sun.jpg);
     background-repeat: no-repeat;
@@ -439,7 +438,7 @@ button {
 
 .sheader{
     text-align:center;
-    margin-bottom:40px;
+    margin-bottom:25px;
 }
 
 

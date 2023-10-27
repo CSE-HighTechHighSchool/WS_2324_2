@@ -404,7 +404,7 @@ button {
 
 .electric {
     background-color: black;
-    height: 400px;
+    height: 330px;
     z-index: -1;
 }
 
@@ -412,18 +412,18 @@ button {
     position: relative;
     margin: auto;
     width: 900px;
-    height: 280px;
+    height: 210px;
     border: 20px dotted rgb(252, 255, 99);
     color: white;
     z-index: 1;
 }
 
 .block {
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .block h1 {
-    font-size: 85px;
+    font-size: 70px;
 }
 
 .header{

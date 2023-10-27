@@ -408,32 +408,26 @@ button {
 
 .electric {
     background-color: black;
-    height: 80vh;
+    height: 400px;
     z-index: -1;
 }
 
-.block {
+.glow {
     position: relative;
     margin: auto;
-    width: 50%;
-    height: 300px;
-    background: linear-gradient(0deg, black, rgb(144, 123, 0), rgb(255, 223, 107));
-    border-radius: 50px;
+    width: 900px;
+    height: 280px;
+    border: 20px dotted rgb(252, 255, 99);
     color: white;
     z-index: 1;
 }
 
-.glow::before , .glow::after {
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    background: linear-gradient(45 deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300,
-            #099fff);
-    background-size: 400%;
-    width: calc(100%+5px);
-    height: calc(100%+5px);
-    z-index: 0;
-    animation: animate-ts 20s linear infinite;
+.block {
+    margin-top: 70px;
+}
+
+.block h1 {
+    font-size: 85px;
 }
 
 .header{
@@ -446,24 +440,6 @@ button {
 .sheader{
     text-align:center;
     margin-bottom:40px;
-}
-
-@keyframes animate-ts {
-    0% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
-}
-
-.glow::after {
-    filter: blur(40px);
 }
 
 
@@ -495,7 +471,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-behavior: smooth;
+    overflow: auto;
 }
 
 .transportating {

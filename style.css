@@ -359,7 +359,7 @@ button {
 
 
 .carousel-item {
-    max-height: 700px;
+    max-height: 645px;
 }
 
 
@@ -383,6 +383,12 @@ button {
 .transport-header-big {
     background-color: rgb(155, 233, 182);
     height: 75vh;
+}
+
+.transportating {
+    max-width: 650px;
+    justify-content: center;
+    align-items: center;
 }
 
 .transport-header-main{

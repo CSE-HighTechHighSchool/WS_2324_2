@@ -125,11 +125,17 @@
 
 .container1 {
     font: 'DM Sans';
+    
 }
 
 .images1 {
     display: flex;
     text-align: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+
+
 }
 
 .image-item1 {

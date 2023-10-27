@@ -450,6 +450,10 @@ button {
     margin: 1em;
 }
 
+.card-img-top {
+    max-height: 325px;
+}
+
 .dropbtn {
     background-color: white;
     color: black;

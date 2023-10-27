@@ -478,7 +478,7 @@ button {
     padding: 16px;
     font-size: 30px;
     border: none;
-    width: 385px;
+    width: 380px;
     text-align: center;
 }
 
@@ -497,7 +497,7 @@ button {
     min-width: 385px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    text-align: center;
+    text-align: left;
 }
 
 /* Change color of dropdown links on hover */

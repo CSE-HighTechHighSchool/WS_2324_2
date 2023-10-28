@@ -161,6 +161,14 @@
     margin: 1.3rem;
 }
 
+.image-item1 .img2 {
+    background-image: url(./img/lighting.jpeg);
+}
+
+.image-item1 .img3 {
+    background-image: url(./img/heat-cool.jpeg);
+}
+
 .image-item1 h3{
     color:#000;
     position: absolute;
@@ -173,14 +181,14 @@
 }
 
 .image-item1:nth-child(2){
-    background-image: url(./img/sun.jpg);
+    background-image: url(./img/lighting.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .image-item1:nth-child(3){
-    background-image: url(./img/sun.jpg);
+    background-image: url(./img/heat-cool.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

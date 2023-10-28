@@ -224,6 +224,28 @@
 
 }
 
+.images2 {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.image-item2 {
+    width: 400px;
+    height: 230px;
+    background-image: url(./img/sun.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.4s;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    margin: 1.3rem;
+}
+
 section {
     padding: 2rem 9%;
 }
@@ -565,6 +587,12 @@ li {
     margin: 1em;
 }
 
+.card1 {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    display:inline-block;
+}
+
 .card-img-top {
     height: 325px;
 }
@@ -577,6 +605,19 @@ li {
     margin-bottom:30px
 }
 .bannergreentext {
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+#bannersolar {
+    background: #a4dac5;
+    height: 400px;
+    padding-top:40px;
+    margin-top:30px;
+    margin-bottom:30px
+}
+.bannersolartext {
     color: white;
     font-family: Arial;
     text-align: center;
@@ -625,6 +666,9 @@ li {
     background-color: #92df95;
 }
 
+.eelighting{
+    padding-top:40px
+}
 
 /* --------------------- HACKS ---------------------*/
 

@@ -559,6 +559,20 @@ li {
     height: 325px;
 }
 
+#header {
+    background: #2bc388;
+    height: 200px;
+    padding-top:75px;
+    margin-top:30px;
+    margin-bottom:30px
+
+}
+h1 {
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
 .dropbtn {
     background-color: white;
     color: black;

@@ -412,7 +412,7 @@ li {
 
 .electric {
     background-color: black;
-    height: 330px;
+    height: 350px;
     z-index: -1;
 }
 
@@ -434,11 +434,12 @@ li {
     font-size: 70px;
 }
 
-.header{
+.headerel{
     text-align: center;
     font-size: 50px;
     margin-top: 40px;
     margin-bottom:25px;
+    color:#000
 }
 
 .sheader{

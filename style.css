@@ -235,7 +235,7 @@
 .image-item2 {
     width: 400px;
     height: 230px;
-    background-image: url(./img/sun.jpg);
+    background-image: url(./img/solarbg.avif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -244,6 +244,7 @@
     position: relative;
     cursor: pointer;
     margin: 1.3rem;
+    color: white;
 }
 
 section {
@@ -291,10 +292,10 @@ section {
 
 .nbMenuItem {
     /*navbar link text properties*/
-    font-size: 25px;
     font-weight: 100;
-    margin-left: 40px;
-    margin-right: 40px;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 0px;
     color: #FFFFFF;
@@ -306,7 +307,7 @@ section {
 
 
     .nav ul li {
-        display: inline-block;
+        display: inline-flex;
     }
 }
 
@@ -333,7 +334,7 @@ li {
 
 
 .navbar ul li {
-    display: inline-block;
+    display: inline-flex;
     vertical-align: middle;
     margin: 0;
     padding: 0

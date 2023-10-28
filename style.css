@@ -34,8 +34,9 @@
     margin-top: 90px;
 }
 
-.container {
+.index-container {
     font: 'DM Sans';
+    overflow:visible;
 }
 
 .footer{

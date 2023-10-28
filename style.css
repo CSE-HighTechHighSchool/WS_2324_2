@@ -49,9 +49,10 @@
 }
 
 .image-item {
+    color: white;
     width: 350px;
     height: 400px;
-    background-image: url(./img/sun.jpg);
+    background-image: url(./img/solar.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -75,7 +76,7 @@
 }
 
 .image-item h3{
-    color:#000;
+    color: white;
     position: absolute;
     opacity:0;
 }

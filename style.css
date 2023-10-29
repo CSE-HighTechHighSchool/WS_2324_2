@@ -43,7 +43,7 @@
 
 .footer{
     color: white;
-    background-color: #79AC78;
+    background-color: black;
 }
 
 .images {
@@ -239,6 +239,10 @@
     margin-top:30px;
 }
 
+.home-app-header{
+    background-color: #fefae0;
+}
+
 .image-item2 {
     width: 400px;
     height: 265px;
@@ -251,7 +255,7 @@
     position: relative;
     cursor: pointer;
     margin: 1.3rem;
-    color: white;
+    color: black;
 }
 
 section {
@@ -608,7 +612,7 @@ li {
 }
 
 #bannergreen {
-    background: #2bc388;
+    background: #588157;
     height: 200px;
     padding-top:75px;
     margin-top:30px;
@@ -630,14 +634,14 @@ li {
 }
 
 #bannersolar {
-    background: #a4dac5;
+    background: #ccd5ae;
     height: 430px;
     padding-top:40px;
     margin-top:30px;
     margin-bottom:30px;
 }
 .bannersolartext {
-    color: white;
+    color: black;
     font-family: Arial;
     text-align: center;
 }

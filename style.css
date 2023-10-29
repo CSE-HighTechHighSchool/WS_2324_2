@@ -195,7 +195,7 @@
 }
 
 .image-item1:nth-child(3){
-    background-image: url(./img/heat-cool.jpeg);
+    background-image: url(./img/organdblu.avif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -208,7 +208,7 @@
 
 .image-item1:hover h2 {
     position: absolute;
-    bottom: 2px;
+    bottom: 0px;
     left: 50%;
     opacity: 1;
     z-index: 2;
@@ -226,7 +226,7 @@
     height: 120px;
     border-radius: 20px;
     transition: ease-in-out 0.4s;
-    background-image: linear-gradient(0deg, #e65b00, rgb(255 255 255 / 0%))
+    background-image: linear-gradient(0deg, #edbb9a, rgb(255 255 255 / 0%))
 
 }
 
@@ -240,6 +240,12 @@
 
 .home-app-header{
     background-color: #fefae0;
+}
+
+.card-body5{
+    width:1000px;
+    padding:20px;
+    padding-bottom:10px;
 }
 
 .image-item2 {

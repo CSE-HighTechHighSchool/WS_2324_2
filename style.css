@@ -237,7 +237,7 @@
 
 .image-item2 {
     width: 400px;
-    height: 230px;
+    height: 265px;
     background-image: url(./img/solarbg.avif);
     background-repeat: no-repeat;
     background-position: center;
@@ -613,7 +613,7 @@ li {
 
 #bannersolar {
     background: #a4dac5;
-    height: 400px;
+    height: 430px;
     padding-top:40px;
     margin-top:30px;
     margin-bottom:30px

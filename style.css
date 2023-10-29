@@ -163,6 +163,7 @@
     position: relative;
     cursor: pointer;
     margin: 1.3rem;
+    color: #000;
 }
 
 .image-item1 .img2 {
@@ -246,7 +247,6 @@
 .image-item2 {
     width: 400px;
     height: 265px;
-    background-image: url(./img/solarbg.avif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

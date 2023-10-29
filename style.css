@@ -361,7 +361,7 @@ li {
     align-items: center;
     min-height: 45vh;
     position: relative;
-    background-color: #cef0c2;
+    background-color: #c1f9ff;
 }
 
 
@@ -425,8 +425,8 @@ li {
     margin: 0 auto;
 }
 
-
 .icon {
+    font-size:50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -434,7 +434,7 @@ li {
     margin: auto;
     margin-top: 0px;
     position: relative;
-    background-color: #F3FDE8;
+    background-color: #E6E6F5;
 }
 
 .reduce-txt {
@@ -497,7 +497,7 @@ li {
 
 
 .compost {
-    background-color: #FFF8D6;
+    background-color: #E6E6F5;
     font-family: sans-serif;
 }
 
@@ -880,8 +880,6 @@ body {
   /*AUTHORS SECT*/
 
   body section.bannersolartext{
-    width:50px;
-    display:inline-block;
     padding:0;
     margin:0;
     box-sizing:border-box;
@@ -999,13 +997,6 @@ body {
         transition-delay: .2s;
         transform: translateX(60vmin);
     }
-
-    .wrap:hover .dots {
-        transform: translateX(1rem);
-    }
-.wrap:hover .dots .dot {
-background: white;
-}
 
 /* Animations and timing delays */
 .animate {

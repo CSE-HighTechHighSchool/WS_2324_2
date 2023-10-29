@@ -411,6 +411,8 @@ li {
     text-align: center;
     text-decoration: none;
     display: flex;
+    margin-top: 270%;
+    margin-left: -50%;
 }
 
 .hide {

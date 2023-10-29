@@ -464,19 +464,19 @@ li {
 .glow {
     position: relative;
     margin: auto;
-    width: 900px;
-    height: 210px;
+    width: 55vw;
+    height: 15vw;
     border: 20px dotted rgb(252, 255, 99);
     color: white;
     z-index: 1;
 }
 
 .block {
-    margin-top: 40px;
+    margin-top: 3vw;
 }
 
 .block h1 {
-    font-size: 70px;
+    font-size: 5vw;
 }
 
 .headerel{
@@ -525,7 +525,7 @@ li {
 
 .transport-header-h1 {
     color: white;
-    font-size: 90px;
+    font-size: 6vw;
     letter-spacing: 0.4em;
     font-family: 'Abril Fatface', sans-serif;
     display: flex;

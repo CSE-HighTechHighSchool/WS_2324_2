@@ -164,6 +164,7 @@
     cursor: pointer;
     margin: 1.3rem;
     color: #000;
+    font-size: 2vw;
 }
 
 .image-item1 .img2 {
@@ -178,6 +179,7 @@
     color:#000;
     position: absolute;
     opacity:0;
+    font-size: 1.5vw;
 }
 
 .image-item1:hover h5{

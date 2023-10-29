@@ -43,7 +43,7 @@
 
 .footer{
     color: white;
-    background-color: black;
+    background-color: #79AC78;
 }
 
 .images {
@@ -305,7 +305,7 @@ section {
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 0px;
-    color: #FFFFFF;
+    color:white ;
 
     .nav ul {
         list-style: none;
@@ -510,7 +510,7 @@ li {
 /* Dropdown Button */
 /* --------------------- TRANSPORTATION ---------------------*/
 .transport-header-big {
-    background-color: rgb(155, 233, 182);
+    background-color:#A7D397;
     height: 45vh;
     display: flex;
     justify-content: center;
@@ -519,7 +519,7 @@ li {
 }
 
 .transport-header-h1 {
-    color: #FFFFFF;
+    color: white;
     font-size: 90px;
     letter-spacing: 0.4em;
     font-family: 'Abril Fatface', sans-serif;
@@ -550,21 +550,28 @@ li {
 
 .transport-header {
     text-align: center;
+    background-color: #E5F9DB;
+}
+
+.overall-transport{
+    background-color: #FFF8D6;
 }
 
 .card {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     display: flex;
+    background-color: #F3FDE8;
 }
 
 .dropbtn {
-    background-color: white;
+    background-color: #FAF0D7;
     color: black;
     padding: 16px;
     font-size: 30px;
     border: none;
     max-width: 300px;
     text-align: center;
+    border-radius: 1em;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -572,24 +579,22 @@ li {
     position: relative;
     display: inline-block;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 1em;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     background-color: #f1f1f1;
-    max-width: 300px;
+    max-width: 380px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: left;
-    border-radius: 2px;
 }
 
 .card {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     margin: 1em;
-    border-radius: 2px;
 }
 
 .card1 {
@@ -607,11 +612,11 @@ li {
     height: 200px;
     padding-top:75px;
     margin-top:30px;
-    margin-bottom:30px
+    margin-bottom:30px;
 }
 
 #bannergreen2 {
-    background: #2bc388;
+    background: #D2E3C8;
     height: 450px;
     padding-top:200px;
     margin-top:15px;
@@ -629,7 +634,7 @@ li {
     height: 430px;
     padding-top:40px;
     margin-top:30px;
-    margin-bottom:30px
+    margin-bottom:30px;
 }
 .bannersolartext {
     color: white;
@@ -638,14 +643,14 @@ li {
 }
 
 .dropbtn {
-    background-color: white;
+    background-color: #F3FDE8;
     color: black;
     padding: 16px;
     font-size: 30px;
     border: none;
     max-width: 370px;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 1em;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -665,25 +670,26 @@ li {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: left;
-    border-radius: 2px;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #ddd;
-    border-radius: 2px;
+    background-color: #FFF8D6;
+    max-width: 385px;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-    border-radius: 2px;
+    border-radius: 1em;
+    max-width: 385px;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #92df95;
-    border-radius: 2px;
+    background-color: #D2E3C8;
+    border-radius: 1em;
+    max-width: 370px;
 }
   
 /* --------------------- HACKS ---------------------*/
@@ -705,7 +711,7 @@ li {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: white;
     /*transform-origin: bottom right;*/
     transition: transform 0.35s ease-out;
 }

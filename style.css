@@ -145,7 +145,7 @@
 }
 
 .image-item .img2 {
-    background-image: url(./img/money.jpeg);
+    background-image: url(./img/green-money.jpeg);
 }
 
 .image-item .img3 {
@@ -168,7 +168,7 @@
 }
 
 .image-item:nth-child(2){
-    background-image: url(./img/money.jpeg);
+    background-image: url(./img/green-money.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -313,7 +313,6 @@
     transform: translate(-50%, -50%)
 }
 
-
 .image-item1:hover::after {
     content: '';
     position: absolute;

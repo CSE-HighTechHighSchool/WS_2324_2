@@ -250,7 +250,7 @@
 }
 
 .image-item1 .img3 {
-    background-image: url(./img/organdblu.avif);
+    background-image: url(./img/hot-cold.png);
 }
 
 .image-item1 h5{
@@ -273,7 +273,7 @@
 }
 
 .image-item1:nth-child(3){
-    background-image: url(./img/organdblu.avif);
+    background-image: url(./img/hot-cold.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

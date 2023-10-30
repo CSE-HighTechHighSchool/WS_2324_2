@@ -240,6 +240,11 @@
 
 .home-app-header{
     background-color: #fefae0;
+    text-align: left;
+}
+
+.solar-power{
+    text-align: center !important;
 }
 
 .card-body5{

@@ -151,7 +151,7 @@
 .image-item {
     width: 350px;
     height: 400px;
-    background-image: url(./img/solar.jpeg);
+    background-image: url(./img/renewable.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -160,7 +160,7 @@
     position: relative;
     cursor: pointer;
     margin: 1.3rem;
-    color:#fff;
+    color:#000;
 }
 
 .image-item .img2 {
@@ -168,15 +168,15 @@
 }
 
 .image-item .img3 {
-    background-image: url(./img/environment.jpeg);
+    background-image: url(./img/renewable2.webp);
 }
 
 .image-item .img4 {
-    background-image: url(./img/reliable.webp);
+    background-image: url(./img/renewable1.jpeg);
 }
 
 .image-item h3{
-    color: white;
+    color: black;
     position: absolute;
     opacity:0;
 }
@@ -194,14 +194,14 @@
 }
 
 .image-item:nth-child(3){
-    background-image: url(./img/environment.jpeg);
+    background-image: url(./img/renewable2.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .image-item:nth-child(4){
-    background-image: url(./img/reliable.webp);
+    background-image: url(./img/renewable1.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

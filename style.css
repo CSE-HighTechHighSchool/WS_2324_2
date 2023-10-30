@@ -11,16 +11,19 @@
 
 .image-item h1 {
     margin-top: 10px;
+    overflow-y: scroll;
 }
 
 .image-item h3 {
     margin-left: 15px;
     margin-right: 15px;
     color:#fff;
+    overflow-y: scroll;
 }
 
 .renewInfo {
     margin-top: 40px;
+    overflow-y: scroll;
 }
 
 .moneyInfo {
@@ -575,6 +578,8 @@ li {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     display: flex;
     background-color: #F3FDE8;
+    overflow-y: scroll;
+    height:auto;
 }
 
 .dropbtn {
@@ -609,6 +614,7 @@ li {
 .card {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     margin: 1em;
+    overflow-y: scroll;
 }
 
 .card1 {
@@ -783,6 +789,7 @@ body {
     &:hover {
       .tl-item {
         width: 23.3333%;
+        overflow-y: scroll;
       }
     }
   }
@@ -810,6 +817,8 @@ body {
       background: transparentize(#031625, 0.15);
       opacity: 1;
       transition: opacity 0.5s ease;
+      overflow-y: scroll;
+
     }
   
     &:before {
@@ -825,6 +834,8 @@ body {
       
       &:after {
         opacity: 0;
+        overflow-y: scroll;
+
       }
   
       &:before {

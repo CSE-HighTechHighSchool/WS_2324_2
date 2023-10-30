@@ -608,6 +608,7 @@ body {
 }
 
 .card-body5{
+    line-height: 1.5;
     width:1000px;
     padding:20px;
     padding-bottom:10px;

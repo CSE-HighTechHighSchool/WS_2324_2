@@ -1050,3 +1050,10 @@ li {
 .carousel-item {
     max-height: 645px;
 }
+
+.carousel-caption {
+    border:2px solid black;
+    background:black;
+    padding-bottom:0px;
+    margin-bottom:0px;
+}

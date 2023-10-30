@@ -110,6 +110,7 @@
 /*------------------INDEX-------------------*/
 .image-item h1 {
     margin-top: 10px;
+    font-size: 3vw;
 }
 
 .image-item h3 {
@@ -160,6 +161,7 @@
     color: black;
     position: absolute;
     opacity:0;
+    font-size: 2vw;
 }
 
 .image-item:hover h3{

@@ -894,8 +894,6 @@ body {
   
   .authorcards {
     padding: 0;
-    margin-bottom:50px;
-    margin-top:50px;
     font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: center;

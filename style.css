@@ -403,7 +403,7 @@ body {
       font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
       text-transform: uppercase;
       color: #1779cf;
-      font-size: 1.44rem;
+      font-size: 0.5vw;
       font-weight: normal;
     }
   }
@@ -419,7 +419,7 @@ body {
     
     p {
       font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
-      font-size: 1.728rem;
+      font-size: 1vw;
       line-height: 0;
     }
   }
@@ -437,6 +437,7 @@ body {
   
   .tl-content{
     margin-top: 35px;
+    font-size: 1vw;
   }
 
   /*AUTHORS SECT*/

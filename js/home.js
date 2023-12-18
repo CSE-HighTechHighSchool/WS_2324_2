@@ -12,13 +12,13 @@ import { getDatabase, ref, set, update, child, get, remove } from "https://www.g
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCJU5uS1jONdwXcOusloa4E3J0zwCe5A6g",
-  authDomain: "singh-fb-rtd-demo.firebaseapp.com",
-  databaseURL: "https://singh-fb-rtd-demo-default-rtdb.firebaseio.com",
-  projectId: "singh-fb-rtd-demo",
-  storageBucket: "singh-fb-rtd-demo.appspot.com",
-  messagingSenderId: "813095792859",
-  appId: "1:813095792859:web:4e3bc6737cb51488ee5cfe"
+  apiKey: "AIzaSyDlGDiv37DRS5d6DzFrxGGi_GY2LJqnXWI",
+  authDomain: "green-home-ef1e1.firebaseapp.com",
+  databaseURL: "https://green-home-ef1e1-default-rtdb.firebaseio.com",
+  projectId: "green-home-ef1e1",
+  storageBucket: "green-home-ef1e1.appspot.com",
+  messagingSenderId: "1043251414580",
+  appId: "1:1043251414580:web:ea805de553872378a1ac61"
 };
 
 // Initialize Firebase
@@ -68,10 +68,10 @@ function SignOutUser(){
 
 
 // ------------------------Set (insert) data into FRD ------------------------
-function setData(userID, year, month, day, temperature){
+function setData(userID, year, month, day, activity){
   // Must use brackets around variable name to use it as a key
   set(ref(db, 'users/' + userID + '/data/' + year + '/' + month), {
-    [day]: temperature
+    [day]: activity
   })
   .then(() => {
     alert("Data stored successfully.");
@@ -82,10 +82,10 @@ function setData(userID, year, month, day, temperature){
 }
 
 // -------------------------Update data in database --------------------------
-function updateData(userID, year, month, day, temperature){
+function updateData(userID, year, month, day, activity){
   // Must use brackets around variable name to use it as a key
   update(ref(db, 'users/' + userID + '/data/' + year + '/' + month), {
-    [day]: temperature
+    [day]: activity
   })
   .then(() => {
     alert("Data updated successfully.");
@@ -101,7 +101,7 @@ function getData(userID, year, month, day){
   let yearVal = document.getElementById('yearVal');
   let monthVal = document.getElementById('monthVal');
   let dayVal = document.getElementById('dayVal');
-  let tempVal = document.getElementById('tempVal');
+  let activityVal = document.getElementById('activityVal');
 
   const dbref = ref(db);  // firevase parameter for getting data
 
@@ -114,7 +114,7 @@ function getData(userID, year, month, day){
       dayVal.textContent = day;
 
       // To get specific valu from a key:   snapshot.val()[key]
-      tempVal.textContent = snapshot.val()[day];
+      activityVal.textContent = snapshot.val()[day];
     }
     else{
       alert('No data found')
@@ -137,7 +137,7 @@ async function getDataSet(userID, year, month){
   monthVal.textContent = `Month: ${month}`;
 
   const days = [];
-  const temps = [];
+  const activities = [];
   const tbodyEl = document.getElementById('tbody-2');   //Select <tbody> element
 
   const dbref = ref(db);  // Firebase parameter for requesting data
@@ -153,7 +153,7 @@ async function getDataSet(userID, year, month){
         console.log(child.key, child.val());
         // Push valyes to correpsonding arrays
         days.push(child.key);
-        temps.push(child.val());
+        activities.push(child.val());
       });
     }
     else{
@@ -167,18 +167,18 @@ async function getDataSet(userID, year, month){
   // Dynamically add table rows to HTML using string interpolation
   tbodyEl.innerHTML = ''; // Clear any existing table
   for(let i = 0; i < days.length; i++) {
-    addItemToTable(days[i], temps[i], tbodyEl)
+    addItemToTable(days[i], activities[i], tbodyEl)
   }
 }
 
 // Add a item to the table of data
-function addItemToTable(day, temp, tbody){
+function addItemToTable(day, activity, tbody){
   let tRow = document.createElement("tr");
   let td1 = document.createElement("td");
   let td2 = document.createElement("td");
 
   td1.innerHTML = day;
-  td2.innerHTML = temp;
+  td2.innerHTML = activity;
 
   tRow.appendChild(td1);
   tRow.appendChild(td2);
@@ -232,17 +232,15 @@ window.onload = function (){
   }
 
 
-
-  // Get, Set, Update, Delete Sharkriver Temp. Data in FRD
   // Set (Insert) data function call
   document.getElementById('set').onclick = function (){
     const year = document.getElementById('year').value;
     const month = document.getElementById('month').value;
     const day = document.getElementById('day').value;
-    const temperature = document.getElementById('temperature').value;
+    const activity = document.getElementById('activity').value;
     const userID = currentUser.uid;
 
-    setData(userID, year, month, day, temperature);
+    setData(userID, year, month, day, activity);
   }
 
 
@@ -251,10 +249,10 @@ window.onload = function (){
     const year = document.getElementById('year').value;
     const month = document.getElementById('month').value;
     const day = document.getElementById('day').value;
-    const temperature = document.getElementById('temperature').value;
+    const activity = document.getElementById('activity').value;
     const userID = currentUser.uid;
 
-    updateData(userID, year, month, day, temperature);
+    updateData(userID, year, month, day, activity);
   }
 
   // Get a datum function call

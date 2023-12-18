@@ -12,13 +12,13 @@ import { getDatabase, ref, set, update, child, get } from "https://www.gstatic.c
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCJU5uS1jONdwXcOusloa4E3J0zwCe5A6g",
-  authDomain: "singh-fb-rtd-demo.firebaseapp.com",
-  databaseURL: "https://singh-fb-rtd-demo-default-rtdb.firebaseio.com",
-  projectId: "singh-fb-rtd-demo",
-  storageBucket: "singh-fb-rtd-demo.appspot.com",
-  messagingSenderId: "813095792859",
-  appId: "1:813095792859:web:4e3bc6737cb51488ee5cfe"
+  apiKey: "AIzaSyDlGDiv37DRS5d6DzFrxGGi_GY2LJqnXWI",
+  authDomain: "green-home-ef1e1.firebaseapp.com",
+  databaseURL: "https://green-home-ef1e1-default-rtdb.firebaseio.com",
+  projectId: "green-home-ef1e1",
+  storageBucket: "green-home-ef1e1.appspot.com",
+  messagingSenderId: "1043251414580",
+  appId: "1:1043251414580:web:ea805de553872378a1ac61"
 };
 
 // Initialize Firebase

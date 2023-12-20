@@ -37,6 +37,11 @@
     }
 }
 
+.user {
+    color: white;
+    font-size: 20px;
+}
+
 .nav-item { /* navbar fonts*/
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

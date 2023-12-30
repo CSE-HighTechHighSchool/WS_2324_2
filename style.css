@@ -1157,8 +1157,8 @@ table th{
 }
 
 .signIn {
-    background: url(./img/bgimage.jpg) no-repeat; /*background image*/
+    background: url(./img/signInBg.png) no-repeat; /*background image*/
     background-size: cover;
     background-position: center;
-    height: 68vh;
+    height: 70vh;
 }

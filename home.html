@@ -29,44 +29,41 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
-        <!-- lg = large breakpoint, headerBG = custom css BG color -->
-        <div class="gh">
-            <a href="index.html" class="navbar-brand pic">
-                <img src="img/gh5.png" class="d-inline-block align-text-top w-50">
-            </a>
-        </div>
-        <div class="container"> <!-- Container will contain content in certain space in middle of page -->
-            
-            <!-- Hamburger Menu Button-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Collapsible navbar menu with custom hover underline CSS animation -->
-            <div class="collapse navbar-collapse" id="navmenu">
-                <!-- Links to hamburger menu button -->
-                <ul class="navbar-nav ms-auto">
+        <!-- lg = large breakpoint, navbar-light = make text dark, headerBG = custom bss BG color -->
+            <div class="container">
+                <a href="home.html" class="navbar-brand pic">
+                    <img src="img/gh5.png" class="d-inline-flex align-text-top w-50">
+                </a>
+      
+                <!-- Hamburger Menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <!-- Collapsible navbar menu with custom hover underline CSS animation -->
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <!-- Links to hamburger menu icon -->
                     <li class="nav-item">
-                        <a href="electric.html" class="nav-link hover-underline-animation nbMenuItem">Home
-                            Appliances</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="transportation.html"
-                            class="nav-link hover-underline-animation nbMenuItem">Transportation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="hacks.html" class="nav-link hover-underline-animation nbMenuItem">Hacks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a  id="userLink" class="user nav-link hover-underline-animation" href="">User Name</a>
-                    </li>
-                    <li class="nav-item">
-                        <a  id="signOut" class="user nav-link hover-underline-animation" href="">Sign Out</a>
-                    </li>
-                </ul>
+                      <a href="electric.html" class="nav-link text-light hover-underline-animation nbMenuItem">
+                          Appliances</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="transportation.html"
+                          class="nav-link text-light hover-underline-animation nbMenuItem">Transportation</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="hacks.html" class="nav-link text-light hover-underline-animation nbMenuItem">Hacks</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="register.html" class="nav-link text-light hover-underline-animation nbMenuItem">Register</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="signIn.html" class="nav-link text-light hover-underline-animation nbMenuItem">Sign In</a>
+                  </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     <div class="container">
         <br><br>
         <h1 id = "welcome"></h1><br><br>

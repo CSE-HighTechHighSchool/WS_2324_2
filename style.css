@@ -15,7 +15,9 @@
     opacity: 100%
 }
 
-
+.pic{
+    min-width: 100px;
+}
 .nbMenuItem {
     /*navbar link text properties*/
     font-weight: 100;

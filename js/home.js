@@ -169,6 +169,8 @@ async function getDataSet(userID, year, month){
   for(let i = 0; i < days.length; i++) {
     addItemToTable(days[i], activities[i], tbodyEl)
   }
+
+  createChart(days, activities, month);
 }
 
 // Add a item to the table of data
@@ -186,6 +188,76 @@ function addItemToTable(day, activity, tbody){
   tbody.appendChild(tRow);
 }
 
+function createChart(days, activities, month) {
+  const ctx = document.getElementById("myChart");
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: days,
+        datasets: [
+            {
+                label: `Number of activities done in ${month}`,
+                data: activities,
+                fill: false,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1
+            },
+        ]
+    },
+    options: {
+        responsive: true,       // Re-size based on screen size
+        scales: {                // Display options for x & y axes
+            x: {
+                title: {
+                    display: true,
+                    text: 'Days',       //x-axis title
+                    font: {             // font properties
+                        size: 20
+                    },
+                },
+                ticks: {
+                    font: {
+                        size: 16
+                    }
+                },
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Number of Activities',
+                    font: {
+                        size: 20
+                    },
+                },
+                ticks: {
+                    maxTicksLimit: data.max(activities)/10,    // limit # of ticks
+                    font: {
+                        size: 12
+                    }
+                }
+            }
+        },
+        plugins: {          // Display options
+            title: {
+                display: true,
+                text: `Number of Activities ${month}`,
+                font: {
+                    size: 24
+                },
+                padding: {
+                    top: 10,
+                    bottom: 30
+                }
+            },
+            legend: {
+                align: 'start',
+                position: 'bottom'
+            }
+        }
+    }
+  });
+}
 
 // -------------------------Delete a day's data from FRD ---------------------
 function deleteData(userID, year, month, day) {

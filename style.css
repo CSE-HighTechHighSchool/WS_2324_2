@@ -23,7 +23,7 @@
     font-weight: 100;
     font-size: 25px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-top: 5px;
     margin-bottom: 0px;
     color:white ;
@@ -46,6 +46,7 @@
 
 .nav-item { /* navbar fonts*/
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 5px;
 }
 
 
@@ -135,6 +136,13 @@
     font: 'DM Sans';
     overflow:visible;
     background-color: #FFF8D6;
+}
+
+.index-img{
+    width: 50%;
+    height: 60%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .images {
@@ -1170,8 +1178,8 @@ table th{
 }
 
 .border {
-    position: -webkit-sticky;
-    position: sticky;
+    /*position: -webkit-sticky;
+    position: sticky;*/
     top: 30px;
     background-color: #cef0c2;
     border-radius: 5px;

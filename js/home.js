@@ -205,7 +205,7 @@ window.onload = function (){
   // ------------------------- Set Welcome Message -------------------------
   getUsername();    // Get current user's first name
   if(currentUser == null){
-    userLink.innerText = "Creat New Account?";
+    userLink.innerText = "Create New Account?";
     userLink.classList.replace("nav-link", "btn");
     userLink.classList.add("btn-primary");
     userLink.href = "register.html";

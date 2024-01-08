@@ -1077,6 +1077,10 @@ table th{
 }
 
 /* ----------------- Class CSS ----------------- */
+.blueBtn{
+    background-color: white;
+}
+
 .dataForm{
     display: flex;
     justify-content: left;

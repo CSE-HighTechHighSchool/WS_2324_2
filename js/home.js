@@ -151,7 +151,7 @@ async function getDataSet(userID, year, month){
 
       snapshot.forEach(child => {
         console.log(child.key, child.val());
-        // Push valyes to correpsonding arrays
+        // Push values to correpsonding arrays
         days.push(child.key);
         activities.push(child.val());
       });

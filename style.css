@@ -1173,3 +1173,7 @@ table th{
     border-radius: 5px;
     box-shadow: 0 20px 40px -6px black;
 }
+
+.headhome {
+    text-align: center;
+}

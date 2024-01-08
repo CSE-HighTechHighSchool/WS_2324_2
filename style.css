@@ -253,7 +253,7 @@ body {
     min-height: 100%;
     max-height:100%;
     color: #fff;
-    overflow: hidden;
+    overflow: scroll;
     transition: width 0.5s ease;
     /*befor eand after transformation*/
     &:before, &:after {
@@ -295,6 +295,7 @@ body {
         opacity: 1;
         transform: translateY(0);
         transition: all 0.75s ease 0.5s;
+        overflow: scroll;
       }
       /*timeline background filter*/
       .tl-bg {
@@ -1076,6 +1077,10 @@ table th{
 }
 
 /* ----------------- Class CSS ----------------- */
+.blueBtn{
+    background-color: white;
+}
+
 .dataForm{
     display: flex;
     justify-content: left;

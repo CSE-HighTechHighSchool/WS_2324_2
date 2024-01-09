@@ -1211,6 +1211,9 @@ table th{
 }
 
 .center_two {
-    padding-left: 34%;
-    background-color: #FFF8D6;
+    height: 15vw;
+}
+
+.center_three {
+    height: 25vw;
 }

@@ -129,16 +129,75 @@ function getData(userID, year, month, day){
 // Must be an async function because you need to get all the data from FRD
 // before you can process it for a table or graph
 
-function createChart(days, activities, month) {
+async function getDataSet(userID, year, month){
+
+  let yearVal = document.getElementById('setYearVal');
+  let monthVal = document.getElementById('setMonthVal');
+
+  yearVal.textContent = `Year: ${year}`;
+  monthVal.textContent = `Month: ${month}`;
+
+  const days = [];
+  const activities = [];
+  const tbodyEl = document.getElementById('tbody-2');   //Select <tbody> element
+
+  const dbref = ref(db);  // Firebase parameter for requesting data
+
+  // Wait for all data to be pulled from FRD
+  // Must provide the path through the nodes to the data
+
+  await get(child(dbref, 'users/' + userID + '/data/' + year + '/' + month)).then((snapshot) => {
+    if(snapshot.exists()) {
+      console.log(snapshot.val());
+
+      snapshot.forEach(child => {
+        console.log(child.key, child.val());
+        // Push values to correpsonding arrays
+        days.push(child.key);
+        activities.push(child.val());
+      });
+    }
+    else{
+      alert('No data found')
+    }
+  })
+  .catch((error) => {
+    alert('Unsuccessful, error: ' + error);
+  });
+
+  // Dynamically add table rows to HTML using string interpolation
+  tbodyEl.innerHTML = ''; // Clear any existing table
+  for(let i = 0; i < days.length; i++) {
+    addItemToTable(days[i], activities[i], tbodyEl)
+  }
+
+  let chartDays = []
+  if (month=='Feb') {
+    chartDays = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28]
+  } else if (month=='Sep' || month=='Apr' || month=='Jun' || month=='Nov') {
+    chartDays = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+  } else {
+    chartDays = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,31]
+  }
+
+  let chartActivities = []
+  for(let i = 0; i < chartDays.length; i++) {
+    chartActivities.push(0)
+  }
+
+  for(let i = 0; i <days.length; i++) {
+    chartActivities[days[i]-1] = activities[i]
+  }
+
   const ctx = document.getElementById("myChart");
   const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: days,
+        labels: chartDays,
         datasets: [
             {
                 label: `Number of points per day in ${month}`,
-                data: activities,
+                data: chartActivities,
                 fill: false,
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderColor: 'rgba(255, 99, 132, 1)',
@@ -198,51 +257,6 @@ function createChart(days, activities, month) {
         }
     }
 });
-}
-
-async function getDataSet(userID, year, month){
-
-  let yearVal = document.getElementById('setYearVal');
-  let monthVal = document.getElementById('setMonthVal');
-
-  yearVal.textContent = `Year: ${year}`;
-  monthVal.textContent = `Month: ${month}`;
-
-  const days = [];
-  const activities = [];
-  const tbodyEl = document.getElementById('tbody-2');   //Select <tbody> element
-
-  const dbref = ref(db);  // Firebase parameter for requesting data
-
-  // Wait for all data to be pulled from FRD
-  // Must provide the path through the nodes to the data
-
-  await get(child(dbref, 'users/' + userID + '/data/' + year + '/' + month)).then((snapshot) => {
-    if(snapshot.exists()) {
-      console.log(snapshot.val());
-
-      snapshot.forEach(child => {
-        console.log(child.key, child.val());
-        // Push values to correpsonding arrays
-        days.push(child.key);
-        activities.push(child.val());
-      });
-    }
-    else{
-      alert('No data found')
-    }
-  })
-  .catch((error) => {
-    alert('Unsuccessful, error: ' + error);
-  });
-
-  // Dynamically add table rows to HTML using string interpolation
-  tbodyEl.innerHTML = ''; // Clear any existing table
-  for(let i = 0; i < days.length; i++) {
-    addItemToTable(days[i], activities[i], tbodyEl)
-  }
-
-  return {days, activities};
 }
 
 // Add a item to the table of data
@@ -344,8 +358,7 @@ window.onload = function (){
     const month = document.getElementById('getSetMonth').value;
     const userID = currentUser.uid;
 
-    values = getDataSet(userID, year, month);
-    createChart(values.days, values.activities, month);
+    getDataSet(userID, year, month);
   };
 
   // Delete a single day's data function call

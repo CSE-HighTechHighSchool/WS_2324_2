@@ -192,8 +192,8 @@ async function getDataSet(userID, year, month){
   }
 
   //Making chart
-  const ctx = document.getElementById("myChart");   //Putting chart for the element with "myChart"
-  const myChart = new Chart(ctx, {
+  let ctx = document.getElementById("myChart");   //Putting chart for the element with "myChart"
+  let myChart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: chartDays, //Chart days for x axis labels

@@ -128,6 +128,78 @@ function getData(userID, year, month, day){
 // ---------------------------Get a month's data set --------------------------
 // Must be an async function because you need to get all the data from FRD
 // before you can process it for a table or graph
+
+function createChart(days, activities, month) {
+  const ctx = document.getElementById("myChart");
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: days,
+        datasets: [
+            {
+                label: `Number of points per day in ${month}`,
+                data: activities,
+                fill: false,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1
+            },
+        ]
+    },
+    options: {
+        responsive: true,       // Re-size based on screen size
+        scales: {                // Display options for x & y axes
+            x: {
+                title: {
+                    display: true,
+                    text: 'Day',       //x-axis title
+                    font: {             // font properties
+                        size: 20
+                    },
+                },
+                ticks: {
+                    font: {
+                        size: 16
+                    }
+                },
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Number of Points',
+                    font: {
+                        size: 20
+                    },
+                },
+                ticks: {
+                    //maxTicksLimit: data.yTemps.length/10,    // limit # of ticks
+                    font: {
+                        size: 12
+                    }
+                }
+            }
+        },
+        plugins: {          // Display options
+            title: {
+                display: true,
+                text: `Number of Points per Day in ${month}`,
+                font: {
+                    size: 24
+                },
+                padding: {
+                    top: 10,
+                    bottom: 30
+                }
+            },
+            legend: {
+                align: 'start',
+                position: 'bottom'
+            }
+        }
+    }
+});
+}
+
 async function getDataSet(userID, year, month){
 
   let yearVal = document.getElementById('setYearVal');
@@ -170,7 +242,7 @@ async function getDataSet(userID, year, month){
     addItemToTable(days[i], activities[i], tbodyEl)
   }
 
-  createChart(days, activities, month);
+  return {days, activities};
 }
 
 // Add a item to the table of data
@@ -186,77 +258,6 @@ function addItemToTable(day, activity, tbody){
   tRow.appendChild(td2);
 
   tbody.appendChild(tRow);
-}
-
-function createChart(days, activities, month) {
-  const ctx = document.getElementById("myChart");
-  const myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: days,
-        datasets: [
-            {
-                label: `Number of activities done in ${month}`,
-                data: activities,
-                fill: false,
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 1
-            },
-        ]
-    },
-    options: {
-        responsive: true,       // Re-size based on screen size
-        scales: {                // Display options for x & y axes
-            x: {
-                title: {
-                    display: true,
-                    text: 'Days',       //x-axis title
-                    font: {             // font properties
-                        size: 20
-                    },
-                },
-                ticks: {
-                    font: {
-                        size: 16
-                    }
-                },
-            },
-            y: {
-                title: {
-                    display: true,
-                    text: 'Number of Activities',
-                    font: {
-                        size: 20
-                    },
-                },
-                ticks: {
-                    maxTicksLimit: data.max(activities)/10,    // limit # of ticks
-                    font: {
-                        size: 12
-                    }
-                }
-            }
-        },
-        plugins: {          // Display options
-            title: {
-                display: true,
-                text: `Number of Activities ${month}`,
-                font: {
-                    size: 24
-                },
-                padding: {
-                    top: 10,
-                    bottom: 30
-                }
-            },
-            legend: {
-                align: 'start',
-                position: 'bottom'
-            }
-        }
-    }
-  });
 }
 
 // -------------------------Delete a day's data from FRD ---------------------
@@ -343,7 +344,8 @@ window.onload = function (){
     const month = document.getElementById('getSetMonth').value;
     const userID = currentUser.uid;
 
-    getDataSet(userID, year, month);
+    values = getDataSet(userID, year, month);
+    createChart(values.days, values.activities, month);
   };
 
   // Delete a single day's data function call

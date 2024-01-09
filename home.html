@@ -21,6 +21,7 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" 
  defer integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" 
  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
  <script type="module" src="js/home.js" defer></script>
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,15 +69,37 @@
     </div>
 
  <h1 class = "headhome">Log Your Progress!</h1><br>
+ <h3 class= "headhome">Add up all the points corresponding to the activities you did in a certain day and put it in your logbook!</h3>
 
  <!--Firebase Data Operations -->
  <!--Set and Update Data-->
  <div class="container border">
  <br><h2>Set & Update Logbook</h2><br>
  <ol class="list-group list-group-numbered notes">
- <li class="list-group-item border-0"><strong>Set</strong> - will completely overwrite all of the activities stored at the date.</li>
- <li class="list-group-item border-0"><strong>Update</strong> - will only replace the activities that have changed at the date, or add new activities if they aren't present</li>
+ <li class="list-group-item border-0"><strong>Set</strong> - will completely overwrite all of the points stored at the date.</li>
+ <li class="list-group-item border-0"><strong>Update</strong> - will only replace the points that have changed at the date, or add new point values if they aren't present</li>
  </ol><br>
+<h3 class="text-center">Activity Table</h3>
+ <table class="table">
+    <thead>
+    <tr>
+    <th scope="col">Activity</th>
+    <th scope="col">Points</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><p>Recycling</p></td>
+    <td><p>1</p></td>
+    </tr>
+    <tr>
+    <tr>
+            <td><p>Reusing</p></td>
+            <td><p>1</p></td>
+            </tr>
+    <tr>
+    </tbody>
+    </table>
  
  <div class="container dataForm mb-5">
  <form>
@@ -137,7 +160,7 @@
  <option value="31">31</option>
  
  </select>
- <input type="text" class="form-control mb-3" placeholder="Activity Completed!" id="activity">
+ <input type="text" class="form-control mb-3" placeholder="Points Achieved!" id="activity">
  <button type = "button" id="set" name="set" class="btn btn-outline-primary mb-3 w-100">Set</button>
  <button type = "button" id="update" name="update" class="btn btn-outline-secondary mb-3 w-100">Update</button>
  </form> 
@@ -146,9 +169,9 @@
 
  <!--Get a single datum -->
  <div class="container border">
- <br><h2>Get an activity</h2><br>
+ <br><h2>Get a point value</h2><br>
  <ol class="list-group list-group-numbered notes">
- <li class="list-group-item border-0">Retrieve a single activity from a date and display it in a table.</li>
+ <li class="list-group-item border-0">Retrieve a single point valye from a date and display it in a table.</li>
  </ol><br>
  
  <div class="container dataForm mb-5">
@@ -239,7 +262,7 @@
  <div class="container border">
  <br><h2>Get a Data Set</h2><br>
  <ol class="list-group list-group-numbered notes">
- <li class="list-group-item border-0">Retrieve an entire month's set of activities and display in a table</li>
+ <li class="list-group-item border-0">Retrieve an entire month's set of points and display in a table and graph</li>
  </ol><br>
  
  <div class="container dataForm mb-5">
@@ -296,7 +319,7 @@
  <div class="container border">
  <br><h2>Delete Activities</h2><br>
  <ol class="list-group list-group-numbered notes">
- <li class="list-group-item border-0">This function will allow you to delete a single day's activities</li>
+ <li class="list-group-item border-0">This function will allow you to delete a single day's points</li>
  </ol><br>
  
  <div class="container dataForm mb-5">

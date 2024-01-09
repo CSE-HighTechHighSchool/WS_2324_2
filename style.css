@@ -1192,6 +1192,7 @@ table th{
     /*transform-origin: bottom left;*/
 }
 
+/*Sign in Page CSS*/
 .signIn {
     background: url(./img/signInBg.png) no-repeat; /*background image*/
     background-size: cover;
@@ -1199,6 +1200,7 @@ table th{
     height: 70vh;
 }
 
+/*Border for boxes in firebase page*/
 .border {
     top: 30px;
     background-color: #cef0c2;
@@ -1209,12 +1211,12 @@ table th{
 .headhome {
     text-align: center;
 }
-
+/*Centering for cards and background*/
 .center {
     padding-left: 34%;
     background-color: #FFF8D6;
 }
-
+/*Setting tabs and button card heights*/
 .center_two {
     height: 15vw;
 }

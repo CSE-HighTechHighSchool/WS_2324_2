@@ -776,6 +776,9 @@ li {
 
 .elContainer{
     margin-bottom:15px;
+    background-color: #FFF8D6;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 /*START*/
@@ -1211,6 +1214,9 @@ table th{
 }
 
 .center_two {
-    padding-left: 34%;
-    background-color: #FFF8D6;
+    height: 15vw;
+}
+
+.center_three {
+    height: 25vw;
 }

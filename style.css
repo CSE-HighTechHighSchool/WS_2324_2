@@ -1200,8 +1200,6 @@ table th{
 }
 
 .border {
-    /*position: -webkit-sticky;
-    position: sticky;*/
     top: 30px;
     background-color: #cef0c2;
     border-radius: 5px;

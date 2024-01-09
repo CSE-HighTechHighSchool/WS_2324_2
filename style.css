@@ -1204,3 +1204,13 @@ table th{
 .headhome {
     text-align: center;
 }
+
+.center {
+    padding-left: 34%;
+    background-color: #FFF8D6;
+}
+
+.center_two {
+    padding-left: 34%;
+    background-color: #FFF8D6;
+}

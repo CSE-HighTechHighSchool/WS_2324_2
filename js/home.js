@@ -113,7 +113,7 @@ function getData(userID, year, month, day){
       monthVal.textContent = month;
       dayVal.textContent = day;
 
-      // To get specific valu from a key:   snapshot.val()[key]
+      // To get specific value from a key:   snapshot.val()[key]
       activityVal.textContent = snapshot.val()[day];
     }
     else{
@@ -171,6 +171,7 @@ async function getDataSet(userID, year, month){
     addItemToTable(days[i], activities[i], tbodyEl)
   }
 
+  //Setting the number of days based on the month for the chart
   let chartDays = []
   if (month=='Feb') {
     chartDays = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28]
@@ -180,6 +181,7 @@ async function getDataSet(userID, year, month){
     chartDays = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,31]
   }
 
+  //Setting all the point values to zero for days not put in
   let chartActivities = []
   for(let i = 0; i < chartDays.length; i++) {
     chartActivities.push(0)
@@ -189,15 +191,16 @@ async function getDataSet(userID, year, month){
     chartActivities[days[i]-1] = activities[i]
   }
 
-  const ctx = document.getElementById("myChart");
+  //Making chart
+  const ctx = document.getElementById("myChart");   //Putting chart for the element with "myChart"
   const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: chartDays,
+        labels: chartDays, //Chart days for x axis labels
         datasets: [
             {
                 label: `Number of points per day in ${month}`,
-                data: chartActivities,
+                data: chartActivities,                          //Using data from the points for activities
                 fill: false,
                 backgroundColor: 'rgba(0, 0, 0, 1)',
                 borderColor: 'rgba(0, 0, 0, 1)',
@@ -225,13 +228,12 @@ async function getDataSet(userID, year, month){
             y: {
                 title: {
                     display: true,
-                    text: 'Number of Points',
+                    text: 'Number of Points',   //Y-axis title
                     font: {
                         size: 20
                     },
                 },
                 ticks: {
-                    //maxTicksLimit: data.yTemps.length/10,    // limit # of ticks
                     font: {
                         size: 12
                     }
@@ -241,7 +243,7 @@ async function getDataSet(userID, year, month){
         plugins: {          // Display options
             title: {
                 display: true,
-                text: `Number of Points per Day in ${month}`,
+                text: `Number of Points per Day in ${month}`,     //Chart title
                 font: {
                     size: 24
                 },
@@ -250,6 +252,7 @@ async function getDataSet(userID, year, month){
                     bottom: 30
                 }
             },
+            //Legend options
             legend: {
                 align: 'start',
                 position: 'bottom'

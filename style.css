@@ -689,7 +689,7 @@ li {
 
 .fade-in{
     opacity: 0;
-    transition: opacity 450ms ease-in;
+    transition: opacity 400ms ease-in;
 }
 
 .fade-in.appear {
@@ -699,8 +699,8 @@ li {
 .from-left, 
 .from-right{
     transition: 
-        opacity 350ms ease-in,
-        transform 500ms ease-in;
+        opacity 330ms ease-in,
+        transform 4800ms ease-in;
     opacity: 0;
 }
 

@@ -14,7 +14,7 @@
         crossorigin="anonymous">defer</script>
     <script src="https://kit.fontawesome.com/fc596df623.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+    <script type="module" src="js/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
@@ -79,28 +79,20 @@
         <h1>What is clean energy?</h1>
         <hr>
       </section>
-      <!-- cards for clean energy-->
-    <div class="row index-cards">
-        <div class="col-sm-6 index-img"> <!-- image-->
-            <div class="card">
-                <div class="card-body"><img class="img-fluid" src="img/clean-energy.jpeg" alt="Wind Farm Clean Energy">
-                </div>
-            </div>
+
+      <button type="button" class="collapsible"><img class="img-fluid" src="img/clean-energy.jpeg" alt="Wind Farm Clean Energy">
+      Click to Open!</button>
+      <div class="indContent">
+        <div><ul class="card-text">
+          <li>Clean energy has no carbon footprint and emits no greenhouse gases</li>
+          <li>It can come in many different forms, including wind, solar, water, geothermal, nuclear, and bioenergy</li>
+          <li>There are also emerging forms of clean energy, like tidal</li>
+          <li>These forms of energy have various perks and drawbacks, but they can all help</li>  
+          <li>While some of these can only be done on a more industrial scale, many of these strategies can be implemented at a local level</li>
+          </ul>
         </div>
-        <div class="col-sm-6"> <!-- text-->
-            <div class="card">
-                <div class="card-body">
-                    <ul class="card-text">
-                        <li>Clean energy has no carbon footprint and emits no greenhouse gases</li>
-                        <li>It can come in many different forms, including wind, solar, water, geothermal, nuclear, and bioenergy</li>
-                        <li>There are also emerging forms of clean energy, like tidal</li>
-                        <li>These forms of energy have various perks and drawbacks, but they can all help</li>  
-                        <li>While some of these can only be done on a more industrial scale, many of these strategies can be implemented at a local level</li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+      </div>
+     
     <!-- cards that open with info when you hover over them-->
     <section class="text-center index-header">
         <h1>Why use clean energy?</h1> <!-- main header-->

@@ -120,6 +120,34 @@
 }
 
 /*------------------INDEX-------------------*/
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #FFF8D6;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin: auto;
+    width: 50%;
+    border: none;
+    text-align: center;
+    outline: none;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .indContent {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 50%;
+
+  }
+
 /*why use clean energy interactive cards css*/
 /*main header for each*/
 .image-item h1 {
@@ -789,7 +817,7 @@ li {
     background-color: white;
   }
   
-  .elWrapper  p {
+  .elWrapper  div {
     text-align: left;
     padding: 10px;
   }

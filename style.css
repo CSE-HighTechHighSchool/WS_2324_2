@@ -777,6 +777,8 @@ li {
 .elContainer{
     margin-bottom:15px;
     background-color: #FFF8D6;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 /*START*/

@@ -76,9 +76,10 @@
  <div class="container border">
  <br><h2>Set & Update Logbook</h2><br>
  <ol class="list-group list-group-numbered notes">
- <li class="list-group-item border-0"><strong>Set</strong> - will completely overwrite all of the points stored at the date.</li>
+ <li class="list-group-item border-0"><strong>Set</strong> - will completely overwrite all of the points stored.</li>
  <li class="list-group-item border-0"><strong>Update</strong> - will only replace the points that have changed at the date, or add new point values if they aren't present</li>
  </ol><br>
+ <!--Activity table with points-->
 <h3 class="text-center">Activity Table</h3>
  <table class="table fade-in">
     <thead>
@@ -122,69 +123,70 @@
     </tr>           
     </tbody>
     </table>
- 
+ <!--Options for year month and day-->
  <div class="container dataForm mb-5">
  <form>
- <select class="form-select mb-3" aria-label="Default select example" id="year">
- <option selected>Year</option>
- <option value="2021">2021</option>
- <option value="2022">2022</option>
- <option value="2023">2023</option>
- <option value="2024">2024</option>
- </select>
- <select class="form-select mb-3" aria-label="Default select example" id="month">
- <option selected>Month</option>
- <option value="Jan">Jan</option>
- <option value="Feb">Feb</option>
- <option value="Mar">Mar</option>
- <option value="Apr">Apr</option>
- <option value="May">May</option>
- <option value="Jun">Jun</option>
- <option value="Jul">Jul</option>
- <option value="Aug">Aug</option>
- <option value="Sep">Sep</option>
- <option value="Oct">Oct</option>
- <option value="Nov">Nov</option>
- <option value="Dec">Dec</option>
- </select>
- <select class="form-select mb-3" aria-label="Default select example" id="day">
- <option selected>Day</option>
- <option value="1">1</option>
- <option value="2">2</option>
- <option value="3">3</option>
- <option value="4">4</option>
- <option value="5">5</option>
- <option value="6">6</option>
- <option value="7">7</option>
- <option value="8">8</option>
- <option value="9">9</option>
- <option value="10">10</option>
- <option value="11">11</option>
- <option value="12">12</option>
- <option value="13">13</option>
- <option value="14">14</option>
- <option value="15">15</option>
- <option value="16">16</option>
- <option value="17">17</option>
- <option value="18">18</option>
- <option value="19">19</option>
- <option value="20">20</option>
- <option value="21">21</option>
- <option value="22">22</option>
- <option value="23">23</option>
- <option value="24">24</option>
- <option value="25">25</option>
- <option value="26">26</option>
- <option value="27">27</option>
- <option value="28">28</option>
- <option value="29">29</option>
- <option value="30">30</option>
- <option value="31">31</option>
- 
- </select>
- <input type="text" class="form-control mb-3" placeholder="Points Achieved" id="activity">
- <button type = "button" id="set" name="set" class="btn btn-outline-primary mb-3 w-100">Set</button>
- <button type = "button" id="update" name="update" class="btn btn-outline-secondary mb-3 w-100">Update</button>
+    <select class="form-select mb-3" aria-label="Default select example" id="year">
+    <option selected>Year</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+    </select>
+    <select class="form-select mb-3" aria-label="Default select example" id="month">
+    <option selected>Month</option>
+        <option value="Jan">Jan</option>
+        <option value="Feb">Feb</option>
+        <option value="Mar">Mar</option>
+        <option value="Apr">Apr</option>
+        <option value="May">May</option>
+        <option value="Jun">Jun</option>
+        <option value="Jul">Jul</option>
+        <option value="Aug">Aug</option>
+        <option value="Sep">Sep</option>
+        <option value="Oct">Oct</option>
+        <option value="Nov">Nov</option>
+        <option value="Dec">Dec</option>
+    </select>
+    <select class="form-select mb-3" aria-label="Default select example" id="day">
+    <option selected>Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+    
+    </select>
+    <input type="text" class="form-control mb-3" placeholder="Points Achieved" id="activity"> <!--Place to put the number of points achieved-->
+    <!-- Set and Update button-->
+    <button type = "button" id="set" name="set" class="btn btn-outline-primary mb-3 w-100">Set</button>
+    <button type = "button" id="update" name="update" class="btn btn-outline-secondary mb-3 w-100">Update</button>
  </form> 
  </div>
  </div><br>
@@ -198,85 +200,86 @@
  
  <div class="container dataForm mb-5">
  <form>
- <select class="form-select mb-3" aria-label="Default select example" id="getYear">
- <option selected>Year</option>
- <option value="2021">2021</option>
- <option value="2022">2022</option>
- <option value="2023">2023</option>
- <option value="2024">2024</option>
- </select>
- <select class="form-select mb-3" aria-label="Default select example" id="getMonth">
- <option selected>Month</option>
- <option value="Jan">Jan</option>
- <option value="Feb">Feb</option>
- <option value="Mar">Mar</option>
- <option value="Apr">Apr</option>
- <option value="May">May</option>
- <option value="Jun">Jun</option>
- <option value="Jul">Jul</option>
- <option value="Aug">Aug</option>
- <option value="Sep">Sep</option>
- <option value="Oct">Oct</option>
- <option value="Nov">Nov</option>
- <option value="Dec">Dec</option>
- </select>
- <select class="form-select mb-3" aria-label="Default select example" id="getDay">
- <option selected>Day</option>
- <option value="1">1</option>
- <option value="2">2</option>
- <option value="3">3</option>
- <option value="4">4</option>
- <option value="5">5</option>
- <option value="6">6</option>
- <option value="7">7</option>
- <option value="8">8</option>
- <option value="9">9</option>
- <option value="10">10</option>
- <option value="11">11</option>
- <option value="12">12</option>
- <option value="13">13</option>
- <option value="14">14</option>
- <option value="15">15</option>
- <option value="16">16</option>
- <option value="17">17</option>
- <option value="18">18</option>
- <option value="19">19</option>
- <option value="20">20</option>
- <option value="21">21</option>
- <option value="22">22</option>
- <option value="23">23</option>
- <option value="24">24</option>
- <option value="25">25</option>
- <option value="26">26</option>
- <option value="27">27</option>
- <option value="28">28</option>
- <option value="29">29</option>
- <option value="30">30</option>
- <option value="31">31</option> 
- </select>
- <button type = "button" id="get" name="get" class="btn btn-outline-primary mb-3 w-100">Get</button>
+    <!--Options for year month and day-->
+    <select class="form-select mb-3" aria-label="Default select example" id="getYear">
+    <option selected>Year</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+    </select>
+    <select class="form-select mb-3" aria-label="Default select example" id="getMonth">
+    <option selected>Month</option>
+        <option value="Jan">Jan</option>
+        <option value="Feb">Feb</option>
+        <option value="Mar">Mar</option>
+        <option value="Apr">Apr</option>
+        <option value="May">May</option>
+        <option value="Jun">Jun</option>
+        <option value="Jul">Jul</option>
+        <option value="Aug">Aug</option>
+        <option value="Sep">Sep</option>
+        <option value="Oct">Oct</option>
+        <option value="Nov">Nov</option>
+        <option value="Dec">Dec</option>
+    </select>
+    <select class="form-select mb-3" aria-label="Default select example" id="getDay">
+    <option selected>Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option> 
+    </select>
+ <button type = "button" id="get" name="get" class="btn btn-outline-primary mb-3 w-100">Get</button> <!--Button to get datum-->
  </form> 
  </div>
 
  <!-- Table for displaying selected data -->
  <table class="table">
- <thead>
- <tr>
- <th scope="col">Year</th>
- <th scope="col">Month</th>
- <th scope="col">Day</th>
- <th scope="col">Points</th>
- </tr>
- </thead>
- <tbody>
- <tr>
- <td><p id ="yearVal"></p></td>
- <td><p id ="monthVal"></td>
- <td><p id ="dayVal"></td>
- <td><p id ="activityVal"></p></td>
- </tr>
- <tr>
- </tbody>
+    <thead>
+    <tr>
+        <th scope="col">Year</th>
+        <th scope="col">Month</th>
+        <th scope="col">Day</th>
+        <th scope="col">Points</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><p id ="yearVal"></p></td>
+        <td><p id ="monthVal"></td>
+        <td><p id ="dayVal"></td>
+        <td><p id ="activityVal"></p></td>
+    </tr>
+    <tr>
+    </tbody>
  </table>
  </div><br>
 
@@ -289,29 +292,30 @@
  
  <div class="container dataForm mb-5">
  <form>
- <select class="form-select mb-3" aria-label="Default select example" id="getSetYear">
- <option selected>Year</option>
- <option value="2021">2021</option>
- <option value="2022">2022</option>
- <option value="2023">2023</option>
- <option value="2024">2024</option>
- </select>
- <select class="form-select mb-3" aria-label="Default select example" id="getSetMonth">
- <option selected>Month</option>
- <option value="Jan">Jan</option>
- <option value="Feb">Feb</option>
- <option value="Mar">Mar</option>
- <option value="Apr">Apr</option>
- <option value="May">May</option>
- <option value="Jun">Jun</option>
- <option value="Jul">Jul</option>
- <option value="Aug">Aug</option>
- <option value="Sep">Sep</option>
- <option value="Oct">Oct</option>
- <option value="Nov">Nov</option>
- <option value="Dec">Dec</option>
- </select>
- <button type = "button" id="getDataSet" name="getDataSet" class="btn btn-outline-primary mb-3 w-100">Get Dataset</button>
+    <!--Options for year and month-->
+    <select class="form-select mb-3" aria-label="Default select example" id="getSetYear">
+    <option selected>Year</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+    </select>
+    <select class="form-select mb-3" aria-label="Default select example" id="getSetMonth">
+    <option selected>Month</option>
+        <option value="Jan">Jan</option>
+        <option value="Feb">Feb</option>
+        <option value="Mar">Mar</option>
+        <option value="Apr">Apr</option>
+        <option value="May">May</option>
+        <option value="Jun">Jun</option>
+        <option value="Jul">Jul</option>
+        <option value="Aug">Aug</option>
+        <option value="Sep">Sep</option>
+        <option value="Oct">Oct</option>
+        <option value="Nov">Nov</option>
+        <option value="Dec">Dec</option>
+    </select>
+    <button type = "button" id="getDataSet" name="getDataSet" class="btn btn-outline-primary mb-3 w-100">Get Dataset</button> <!--Get dataset button-->
  </form> 
  </div>
 
@@ -323,16 +327,16 @@
  <!-- Table for displaying data set -->
  <div class="container">
  <table class="table">
- <thead>
- <tr>
- <th scope="col">Day</th>
- <th scope="col">Points</th>
- </tr>
- </thead>
- <tbody id = "tbody-2">
- </tbody>
+    <thead>
+        <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Points</th>
+        </tr>
+    </thead>
+    <tbody id = "tbody-2">
+    </tbody>
  </table>
- <canvas id="myChart"></canvas>
+ <canvas id="myChart"></canvas> <!--JS chart for datapoints-->
  </div>
  </div><br>
  </div><br>
@@ -346,63 +350,64 @@
  
  <div class="container dataForm mb-5">
  <form>
- <select class="form-select mb-3" aria-label="Default select example" id="delYear">
- <option selected>Year</option>
- <option value="2021">2021</option>
- <option value="2022">2022</option>
- <option value="2023">2023</option>
- <option value="2024">2024</option>
- </select>
- <select class="form-select mb-3" aria-label="Default select example" id="delMonth">
- <option selected>Month</option>
- <option value="Jan">Jan</option>
- <option value="Feb">Feb</option>
- <option value="Mar">Mar</option>
- <option value="Apr">Apr</option>
- <option value="May">May</option>
- <option value="Jun">Jun</option>
- <option value="Jul">Jul</option>
- <option value="Aug">Aug</option>
- <option value="Sep">Sep</option>
- <option value="Oct">Oct</option>
- <option value="Nov">Nov</option>
- <option value="Dec">Dec</option>
- </select>
- <select class="form-select mb-3" aria-label="Default select example" id="delDay">
- <option selected>Day</option>
- <option value="1">1</option>
- <option value="2">2</option>
- <option value="3">3</option>
- <option value="4">4</option>
- <option value="5">5</option>
- <option value="6">6</option>
- <option value="7">7</option>
- <option value="8">8</option>
- <option value="9">9</option>
- <option value="10">10</option>
- <option value="11">11</option>
- <option value="12">12</option>
- <option value="13">13</option>
- <option value="14">14</option>
- <option value="15">15</option>
- <option value="16">16</option>
- <option value="17">17</option>
- <option value="18">18</option>
- <option value="19">19</option>
- <option value="20">20</option>
- <option value="21">21</option>
- <option value="22">22</option>
- <option value="23">23</option>
- <option value="24">24</option>
- <option value="25">25</option>
- <option value="26">26</option>
- <option value="27">27</option>
- <option value="28">28</option>
- <option value="29">29</option>
- <option value="30">30</option>
- <option value="31">31</option> 
- </select>
- <button type = "button" id="delete" name="delete" class="btn btn-outline-primary mb-3 w-100">Delete</button>
+    <!--Options for year month and day-->
+    <select class="form-select mb-3" aria-label="Default select example" id="delYear">
+    <option selected>Year</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+    </select>
+    <select class="form-select mb-3" aria-label="Default select example" id="delMonth">
+    <option selected>Month</option>
+        <option value="Jan">Jan</option>
+        <option value="Feb">Feb</option>
+        <option value="Mar">Mar</option>
+        <option value="Apr">Apr</option>
+        <option value="May">May</option>
+        <option value="Jun">Jun</option>
+        <option value="Jul">Jul</option>
+        <option value="Aug">Aug</option>
+        <option value="Sep">Sep</option>
+        <option value="Oct">Oct</option>
+        <option value="Nov">Nov</option>
+        <option value="Dec">Dec</option>
+    </select>
+    <select class="form-select mb-3" aria-label="Default select example" id="delDay">
+    <option selected>Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option> 
+    </select>
+    <button type = "button" id="delete" name="delete" class="btn btn-outline-primary mb-3 w-100">Delete</button> <!--Delete button-->
  </form> 
  </div>
  </div><br>

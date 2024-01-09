@@ -122,15 +122,15 @@
 /*------------------INDEX-------------------*/
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: #eee;
+    background-color: #FFF8D6;
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    margin: auto;
+    width: 50%;
     border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
-    font-size: 15px;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -144,6 +144,8 @@
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+    width: 50%;
+
   }
 
 /*why use clean energy interactive cards css*/

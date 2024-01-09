@@ -1,7 +1,7 @@
 var coll = document.getElementsByClassName("collapsible");
 var i;
 const faders = document.querySelectorAll('.fade-in');
-const sliders = document.querySelectorAll('.slide-in')
+const sliders = document.querySelectorAll('.slide-in');
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {

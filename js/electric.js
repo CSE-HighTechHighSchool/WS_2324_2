@@ -1,3 +1,10 @@
+/*Name: Jyothi Ramesh, Jasmine Guo, Ishani Singh
+   Date: 1/8/2024
+   Program: electric.js
+   Purpose: Enhance the appearance of the electric html page by adding interactive components
+*/
+
+
 // Selecting DOM elements
 const tabs = document.querySelector(".elWrapper");          // Selecting the container for tabs
 const tabButton = document.querySelectorAll(".tab-button");  // Selecting all tab buttons

@@ -9,6 +9,10 @@
     transition: .2s linear
 }
 
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
 .nb-background-color {
     /*navbar background color*/
     background-color: black;

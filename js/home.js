@@ -199,8 +199,8 @@ async function getDataSet(userID, year, month){
                 label: `Number of points per day in ${month}`,
                 data: chartActivities,
                 fill: false,
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgba(255, 99, 132, 1)',
+                backgroundColor: 'rgba(0, 0, 0, 1)',
+                borderColor: 'rgba(0, 0, 0, 1)',
                 borderWidth: 1
             },
         ]

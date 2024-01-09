@@ -181,6 +181,7 @@
     display: flex;
     text-align: center;
 }
+
 /*why use clean energy base css for interactive cards*/
 .image-item {
     width: 350px;
@@ -239,6 +240,7 @@
     width: 800px;
     height: 400px;
 }
+
 /*position of title after hovering over card*/
 .image-item:hover h1 {
     position: absolute;
@@ -267,6 +269,7 @@
     font: 'DM Sans';
     
 }
+
 /*body formatting*/
 body {
     font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif; 
@@ -420,6 +423,7 @@ body {
     max-height: 350px;
     box-shadow: 0 40px 60px -6px black;
   }
+
   /*title for cards*/
   .card-title {
     display: block;
@@ -430,6 +434,7 @@ body {
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
   }
+
   /*author images formatting*/
   .card2 img {
     width: 100%;
@@ -438,6 +443,7 @@ body {
     display: block;
     position: relative;
   }
+
   /*dropdown for description formatting*/
   .card-desc {
     display: block;
@@ -451,11 +457,13 @@ body {
     overflow-y: scroll;
     transition: 0.8s ease;
   }
+
   /*animation code for authors*/
   .card2:hover .card-desc {
     opacity: 1;
     height: 100%;
   }
+
   /*name for author code*/
   .authorcards h1 {
     font-size: 2.8rem;
@@ -463,6 +471,7 @@ body {
     margin: 40px 0 20px 0;
     text-align: center;
   }
+  
 /*index header*/
 .index-header{
     background-color: #FFF8D6;
@@ -475,6 +484,7 @@ body {
 section {
     padding: 2rem 9%;
 }
+
 /*main showcase on home css*/
 .home {
     display: flex;
@@ -500,7 +510,6 @@ section {
     padding-top: 1;
 }
 
-
 .home .content h6 {
     font-size: 2.5rem;
     color: rgb(255, 255, 255);
@@ -508,16 +517,13 @@ section {
     font-weight: 350
 }
 
-
 .ovPadRight {
     padding-right: 20px;
 }
 
-
 .ovPadLeft {
     padding-left: 20px;
 }
-
 
 p,
 li {
@@ -767,19 +773,12 @@ li {
     margin-top:30px;
     margin-bottom:30px;
 }
-/*solar power banner text*/
-.bannersolartext {
-    color: black;
-    font-family: Arial;
-    text-align: center;
-}
 
-.eContainer{
-    background-color: #ccd5ae;
+.elContainer{
+    margin-bottom:15px;
 }
 
 /*START*/
-  
   .elWrapper h1 {
     font-size: 48px;
     color: #232c3d;
@@ -834,6 +833,26 @@ li {
   .elContent.active {
     display: block;
   }
+ 
+/*image carousel*/
+.carousel-item {
+    max-height: 645px;
+}
+
+.carousel-caption {
+    border:2px solid black;
+    background:black;
+    padding-bottom:0px;
+    margin-bottom:0px;
+}
+
+table th{
+    /*Keep column headers at the top as table is scrolled*/
+    position: sticky;
+    top: 0px; /* https://www.w3schools.com/cssref/pr_pos_top.php*/
+    overflow-y: auto;
+
+}
 
 /* --------------------- TRANSPORTATION ---------------------*/
 
@@ -1078,116 +1097,6 @@ li {
     background-color: #D2E3C8;
     border-radius: 1em;
     max-width: 370px;
-}
-  
-/* --------------------- HACKS ---------------------*/
-/*hacks header css*/
-.hacks {
-    margin: auto;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 45vh;
-    position: relative;
-    background-color: #cef0c2;
-}
-/*hacks heading text css*/
-.hacks h1 {
-    position: absolute;
-    color: #fff;
-    font-size: 14em;
-    font-family: "DM-sans";
-}
-
-/*hacks animation (before)*/
-.hacks h1:nth-child(1) {
-    color: transparent;
-    -webkit-text-stroke: 2px #00699a
-}
-
-/*hacks animation (after)*/
-.hacks h1:nth-child(2) {
-    color: #00699a;
-    animation: animate-tr 4s ease-in-out infinite;
-}
-
-/*clip path for water animation*/
-@keyframes animate-tr {
-
-    0%,
-    100% {
-        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 58%, 100% 52%, 100% 100%, 0% 100%);
-    }
-
-    50% {
-        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
-    }
-}
-/*hiding of text for recycling icon*/
-.hide {
-    background-color: #D0F5BE;
-    border-radius: 5px;
-    text-align: center;
-    position: absolute;
-    margin: 0 auto;
-}
-/*css for icon and positioning*/
-.icon {
-    font-size:50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    margin-top: 0px;
-    position: relative;
-    background-color: #F3FDE8;
-}
-/*position for each bos when opened up*/
-.reduce-txt {
-    top: 20%;
-    left: 70%;
-}
-
-.reuse-txt {
-    top: 65%;
-    left: 10%;
-}
-
-
-.recycle-txt {
-    top: 10%;
-    left: 5%;
-}
-
-.details {
-    text-align: left;
-}
-/*compost css*/
-.compost {
-    background-color: #FFF8D6;
-    font-family: sans-serif;
-}
-/*image carousel*/
-.carousel-item {
-    max-height: 645px;
-}
-
-.carousel-caption {
-    border:2px solid black;
-    background:black;
-    padding-bottom:0px;
-    margin-bottom:0px;
-}
-
-table th{
-    /*Keep column headers at the top as table is scrolled*/
-    position: sticky;
-    top: 0px; /* https://www.w3schools.com/cssref/pr_pos_top.php*/
-    overflow-y: auto;
-
 }
 
 /* ----------------- Class CSS ----------------- */

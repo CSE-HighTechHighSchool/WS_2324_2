@@ -1,3 +1,10 @@
+/* Name: Jyothi Ramesh, Jasmine Guo, Ishani Singh
+   Date: 1/8/2024
+   Program: transportation.js
+   Purpose: Enhance the appearance of the transportation html page by adding 
+            interactive components such as collapsibles and fade in transitions
+*/
+
 // Selecting elements with class "collapsible"
 var coll = document.getElementsByClassName("collapsible");
 var i;

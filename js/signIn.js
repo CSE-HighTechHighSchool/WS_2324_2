@@ -1,3 +1,10 @@
+/* Name: Jyothi Ramesh, Jasmine Guo, Ishani Singh
+   Date: 1/8/2024
+   Program: signIn.js
+   Purpose: Create a functioning sign in html page that signs 
+            an existing user in
+*/
+
 // ----------------- User Sign-In Page --------------------------------------//
 
 // ----------------- Firebase Setup & Initialization ------------------------//

@@ -1,7 +1,8 @@
-/*Name: Jyothi Ramesh, Jasmine Guo, Ishani Singh
+/* Name: Jyothi Ramesh, Jasmine Guo, Ishani Singh
    Date: 1/8/2024
    Program: electric.js
-   Purpose: Enhance the appearance of the electric html page by adding interactive components
+   Purpose: Enhance the appearance of the electric html page by adding 
+            interactive components such as tabs and fade in transitions
 */
 
 

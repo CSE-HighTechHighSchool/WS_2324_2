@@ -1,3 +1,10 @@
+/* Name: Jyothi Ramesh, Jasmine Guo, Ishani Singh
+   Date: 1/8/2024
+   Program: register.js
+   Purpose: Create a functioning register html page that creates
+            an account for a new user
+*/
+
 // This JS file is for registering a new app user ---------------------------//
 
 // ----------------- Firebase Setup & Initialization ------------------------//

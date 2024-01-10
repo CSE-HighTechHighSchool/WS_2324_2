@@ -1,3 +1,10 @@
+/* Name: Jyothi Ramesh, Jasmine Guo, Ishani Singh
+   Date: 1/8/2024
+   Program: home.js
+   Purpose: Enhance the appearance of the home html page by adding 
+            interactive components fade in transitions
+*/
+
 // ----------------- Page Loaded After User Sign-in -------------------------//
 
 // ----------------- Firebase Setup & Initialization ------------------------//

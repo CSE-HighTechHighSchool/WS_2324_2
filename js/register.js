@@ -78,41 +78,54 @@ document.getElementById('submitData').onclick = function(){
   });
 }
 
-
-
-
-
 // --------------- Check for null, empty ("") or all spaces only ------------//
 function isEmptyorSpaces(str){
   return str === null || str.match(/^ *$/) !== null
 }
 
 // ---------------------- Validate Registration Data -----------------------//
-function validation(firstName, lastName, email, password){
+// Function for form validation
+function validation(firstName, lastName, email, password) {
+  // Regular expressions for validating first name, last name, and email
   let fNameRegex = /^[a-zA-Z]+$/;
   let lNameRegex = /^[a-zA-Z]+$/;
   let emailRegex = /^[a-zA-Z0-9]+@ctemc\.org$/;
 
-  if (isEmptyorSpaces(firstName) || isEmptyorSpaces(lastName) || isEmptyorSpaces(email) || isEmptyorSpaces(password)){
+  // Check if any of the fields are empty or contain only spaces
+  if (isEmptyOrSpaces(firstName) || isEmptyOrSpaces(lastName) || isEmptyOrSpaces(email) || isEmptyOrSpaces(password)) {
+    // Display an alert if any field is empty or contains only spaces
     alert("Please complete all fields.");
-    return false;
+    return false; // Return false to indicate validation failure
   }
 
-  if (!fNameRegex.test(firstName)){
+  // Validate the format of the first name using regex
+  if (!fNameRegex.test(firstName)) {
+    // Display an alert if the first name does not match the expected format
     alert("The first name should only contain letters.");
-    return false;
+    return false; // Return false to indicate validation failure
   }
 
-  if (!lNameRegex.test(lastName)){
+  // Validate the format of the last name using regex
+  if (!lNameRegex.test(lastName)) {
+    // Display an alert if the last name does not match the expected format
     alert("The last name should only contain letters.");
-    return false;
+    return false; // Return false to indicate validation failure
   }
 
-  if (!emailRegex.test(email)){
+  // Validate the format of the email using regex
+  if (!emailRegex.test(email)) {
+    // Display an alert if the email does not match the expected format
     alert("Please enter a valid email.");
-    return false;
+    return false; // Return false to indicate validation failure
   }
+
+  // If all validations pass, return true to indicate successful validation
   return true;
+}
+
+// Function to check if a string is empty or contains only spaces
+function isEmptyOrSpaces(str) {
+  return str === null || str.match(/^ *$/) !== null;
 }
 
 // --------------- Password Encryption -------------------------------------//
